@@ -100,6 +100,9 @@ header {
     .overlaySlide-button {
       font-size: 2em;
     }
+    .intro-button{
+      font-size: 1em;
+    }
   }
   /* .centered {
   color: white;
@@ -224,5 +227,26 @@ video::-webkit-media-controls {
 }
 .overlay-button:hover{
   color: pink;
+  transform: scale(1.1);
+}
+.intro-button a {
+  size: 8em;
+  text-decoration: none;
+  color: white;
+}
+.intro-button a:hover {
+  color: pink;
+  transform: scale(1.1);
+}
+.intro-button {
+  padding: 10px 20px;
+  font-size: 4rem;
+  background-color: transparent;
+  border: white;
+  border-radius: 1rem;
+  border-style: groove;
+  color: white;
+}
+.intro-button:hover {
   transform: scale(1.1);
 }
