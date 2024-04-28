@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+body {
+  height: 100svh;
+  width: 100%;
+}
+* {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: white;
+  width: 100%;
+}
+.head {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .head img {
+    height: 8em;
+  }
+  .navigation {
+    text-align: right;
+    padding: 10px;
+  }
+  .navigation a {
+    color: black;
+    background-size: 100%;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-decoration: none;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0px;
+  }
+  .navigation a:hover {
+    background-color: pink;
+    color: white;
+  }
+  .mySlides {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 2px;
+    justify-content: center;
+    transition: opacity 8000ms ease 0s;
+  }
+  img {
+    filter: brightness(40%);
+  }
+  .photos {
+    display: flex;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+    width: 100%;
+  }
+  .slideshow-text {
+    color: white;
+    font-size: 9em;
+    position: absolute;
+    top: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    .slideshow-text {
+      font-size: 3em;
+    }
+  }

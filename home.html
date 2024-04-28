@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Title of page -->
+    <title>NEO.EG</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- page icon -->
+    <link rel="icon" type="image/x-icon" href="Logo-removebg-preview (1).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- slideshow -->
+    <script type="text/javascript">
+      var myIndex = 0;
+      function slider() {
+        var images = document.getElementsByClassName("mySlides");
+        for (var i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+
+        if (myIndex > images.length - 1) {
+          myIndex = 0;
+        }
+        images[myIndex].style.display = "flex";
+        myIndex++;
+        setTimeout(slider, 5000); // Change image every 5 seconds
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="head">
+          <a href="http://127.0.0.1:5500/index.html"
+            ><img src="Logo-removebg-preview (1).png" weight="30%"
+          /></a>
+        </div>
+        <div class="navigation">
+          <a href="#account" title="Account"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <a href="#cart" title="Cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#about" title="About neo"
+            ><i class="fa-solid fa-heart"></i
+          ></a>
+          <a href="#help" title="Contact"
+            ><i class="fa-solid fa-square-phone"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="photos">
+      <div class="mySlides fade">
+        <img src="3ca9eb9f-ae35-4107-9438-058a44ec326c.jpeg" />
+        <div class="slideshow-text slideImg-fade">
+          CREATIVITY
+          
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="30972c95-1a75-4581-975f-cd3688185cc0.jpeg" />
+        <div class="slideshow-text slideImg-fade">
+          MODERNITY
+          
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="WhatsApp Image 2024-04-23 at 8.20.20 PM (1).jpeg" />
+        <div class="slideshow-text slideImg-fade">
+          CONFIDANCE
+          
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="36834ce8-d438-4d7c-8f31-22fef852f3d2.jpeg" />
+        <div class="slideshow-text slideImg-fade">
+        NEO
+          
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="WhatsApp Image 2024-04-23 at 8.20.19 PM.jpeg" />
+        <div class="slideshow-text slideImg-fade">
+        NEO
+          
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="WhatsApp Image 2024-04-23 at 8.20.52 PM.jpeg" />
+        <div class="slideshow-text slideImg-fade">
+        NEO
+          
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      slider();
+    </script>
     
 </body>
 </html>
