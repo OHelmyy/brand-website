@@ -176,7 +176,7 @@ marquee {
   width: 100%;
 }
 video{
-  filter: brightness(40%);
+  filter: brightness(60%);
   box-shadow: 10%;
 }
 video::-webkit-media-controls {
