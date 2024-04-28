@@ -28,6 +28,10 @@
         myIndex++;
         setTimeout(slider, 5000); // Change image every 5 seconds
       }
+      // go to shop function
+      function goToShop() {
+          window.location.href = ""; // Replace "shop.html" with the actual URL of your shop page
+        }
     </script>
   </head>
 
@@ -61,7 +65,7 @@
         <img src="3ca9eb9f-ae35-4107-9438-058a44ec326c.jpeg" />
         <div class="slideshow-text slideImg-fade">
           CREATIVITY
-          
+          <button class="overlaySlide-button" onclick="goToShop()">Shop now</button>
         </div>
       </div>
 
@@ -69,7 +73,7 @@
         <img src="30972c95-1a75-4581-975f-cd3688185cc0.jpeg" />
         <div class="slideshow-text slideImg-fade">
           MODERNITY
-          
+          <button class="overlaySlide-button" onclick="goToShop()">Shop now</button>
         </div>
       </div>
 
@@ -77,7 +81,7 @@
         <img src="WhatsApp Image 2024-04-23 at 8.20.20 PM (1).jpeg" />
         <div class="slideshow-text slideImg-fade">
           CONFIDANCE
-          
+          <button class="overlaySlide-button" onclick="goToShop()">Shop now</button>
         </div>
       </div>
 
@@ -85,7 +89,7 @@
         <img src="36834ce8-d438-4d7c-8f31-22fef852f3d2.jpeg" />
         <div class="slideshow-text slideImg-fade">
         NEO
-          
+        <button class="overlaySlide-button" onclick="goToShop()">Shop now</button>
         </div>
       </div>
 
@@ -93,7 +97,7 @@
         <img src="WhatsApp Image 2024-04-23 at 8.20.19 PM.jpeg" />
         <div class="slideshow-text slideImg-fade">
         NEO
-          
+        <button class="overlaySlide-button" onclick="goToShop()">Shop now</button>
         </div>
       </div>
 
@@ -101,12 +105,21 @@
         <img src="WhatsApp Image 2024-04-23 at 8.20.52 PM.jpeg" />
         <div class="slideshow-text slideImg-fade">
         NEO
-          
+        <button class="overlaySlide-button" onclick="goToShop()">Shop now</button>
         </div>
       </div>
-    </div>
+    <!-- <button class="overlaySlide-button">Shop now</button> -->
+  </div>
 
-    
+  <!--  <div class="centered">NEO</div> >
+    </div>
+    <div class="vid-overlay">
+      <h1 class="neo-overlay">NEO</h1>
+      <button class="overlay-button">Shop now</button>
+      <br />
+      <p>shop exclusive products</p>
+    </div>
+  </div> -->
 
     <script>
       slider();

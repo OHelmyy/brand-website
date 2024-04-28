@@ -97,4 +97,57 @@ header {
     .slideshow-text {
       font-size: 3em;
     }
+    .overlaySlide-button {
+      font-size: 2em;
+    }
   }
+  /* .centered {
+  color: white;
+  font-size: 20em;
+  font-weight: 10em;
+  position: absolute;
+  bottom: 20%;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+}
+.neo-overlay h1 {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 20em;
+  font-weight: 10em;
+} */
+
+.overlay-button {
+  padding: 10px 20px;
+  font-size: 4rem;
+  background-color: transparent;
+  border: white;
+  border-radius: 15rem;
+  border-style: groove;
+  color: white;
+
+  cursor: pointer;
+}
+.overlay-button:hover{
+  color: pink;
+  transform: scale(1.1);
+}
+button.overlaySlide-button {
+  padding: 10px 20px;
+  font-size: 4rem;
+  background-color: transparent;
+  border: white;
+  border-radius: 15rem;
+  border-style: groove;
+  color: white;
+  cursor: pointer;
+  top: 8em;
+  left: 3.7em;
+}
+.overlaySlide-button:hover{
+  color: pink;
+  transform: scale(1.1);
+}
+.overlay-button {
+  justify-content: center;
+}
