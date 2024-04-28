@@ -10,6 +10,7 @@ body {
   padding: 0px;
   margin: 0px;
   scroll-behavior: smooth;
+
 }
 header {
   background-color: white;
@@ -249,4 +250,63 @@ video::-webkit-media-controls {
 }
 .intro-button:hover {
   transform: scale(1.1);
+}
+.Cartslide {
+  position: fixed; 
+  height: 100%; 
+  background-color: black; 
+  color: aliceblue;
+  width: 0; 
+  z-index: 1;
+  top: 0; 
+  right:0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 4rem; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+.Cartslide a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.Cartslide a:hover {
+  color: white;
+}
+
+
+.Cartslide .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0.2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.product-card {
+  background-color: aliceblue;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin :1rem;
+  display: flex;
+    justify-content: center; 
+    
+
+}
+
+
+.product-card img {
+  border-radius: 5px 5px 0 0;
+  margin:2rem;
+  border-radius: 5px;
+  scale: 0.1rem;
+}
+.detail-container{
+  margin :3rem;
+  color: black;
 }
