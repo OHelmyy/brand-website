@@ -165,3 +165,20 @@ marquee {
   padding: 0px;
   margin: 0px;
 }
+#video-container {
+  position: relative;
+  margin: 0 auto;
+
+  max-width: 100%;
+}
+
+#video-container video {
+  width: 100%;
+}
+video{
+  filter: brightness(40%);
+  box-shadow: 10%;
+}
+video::-webkit-media-controls {
+  display: none !important; /* Hide default controls */
+}
