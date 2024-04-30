@@ -45,7 +45,63 @@ header {
     padding: 20px;
     margin: 0px;
   }
-  .navigation a:hover {
+  /*SEARCH ICON*/
+  .action{
+    position: relative;
+    top: 20%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    transition: all 1.5s;
+    width: 80px;
+    height: 32px;
+    background-color: white;
+    box-sizing:border-box;
+    border-radius: 20px;
+  }
+  .action{
+    float: left;
+  }
+  input{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100%;
+    height: 42.5px;
+    line-height:30px ;
+    border: 0;
+    display: none;
+    color: black;
+    font-size: 1em;
+    padding: 0 20px;
+  }
+  .fa-magnifying-glass{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    border-radius: 50%;
+    color:black;
+    text-align: center;
+    font-size: 1.2em ;
+    transform: all 1s;
+  }
+  .action:hover{
+    width: 200px;
+    cursor: pointer;
+  }
+  .action:hover input{
+   display: block;
+}
+.action:hover .fa-magnifying-glass{
+  background:white ;
+ color: pink;
+}
+
+
+.navigation a:hover {
     background-color: pink;
     color: white;
   }
