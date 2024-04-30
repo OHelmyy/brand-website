@@ -310,3 +310,67 @@ video::-webkit-media-controls {
   margin :3rem;
   color: black;
 }
+
+.footer{
+  background-color: black;
+  width: 100%;
+  display: flex;
+
+}
+.footerContainer{
+  background-color: black;
+  width: 100%;
+  flex-direction: column;
+}
+.footerImage Img{
+  display: flex;
+  background-color: whitesmoke;
+  width: 6rem;
+  justify-content: center;
+}
+.footerImage{
+  object-fit: contain;
+}
+.footerConatcts{
+  display: flex;
+  padding: 0.5rem;
+
+}
+.footerConatcts a{
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 0.3em;
+  text-transform: uppercase;
+  text-shadow: 2px;
+ 
+}
+.footerBar{
+  display: flex;
+  background-color: black;
+  padding: 0.5rem;
+}
+.footerBar a{
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.footerBar a:hover{
+  color: pink;
+  transition: 0.5;
+filter: drop-shadow(15);
+}
+a:visited {
+  color:palevioletred;
+}
