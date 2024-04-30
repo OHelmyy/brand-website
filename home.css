@@ -312,21 +312,22 @@ video::-webkit-media-controls {
 }
 
 .footer{
-  background-color: black;
+  background-color: white;
   width: 100%;
   display: flex;
 
 }
 .footerContainer{
-  background-color: black;
+  background-color: white;
   width: 100%;
   flex-direction: column;
 }
 .footerImage Img{
   display: flex;
-  background-color: whitesmoke;
-  width: 6rem;
+  color: white;
+  width: 4rem;
   justify-content: center;
+  position: absolute;
 }
 .footerImage{
   object-fit: contain;
@@ -338,7 +339,7 @@ video::-webkit-media-controls {
 }
 .footerConatcts a{
   width: 100%;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,27 +351,49 @@ video::-webkit-media-controls {
 }
 .footerBar{
   display: flex;
-  background-color: black;
+  background-color: white;
   padding: 0.5rem;
 }
 .footerBar a{
   width: 100%;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0.3rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
 
 }
 .footerBar a:hover{
-  color: pink;
+  color: deeppink;
   transition: 0.5;
 filter: drop-shadow(15);
 }
-a:visited {
-  color:palevioletred;
+.footerSocial{
+  padding: 0.5rem;
 }
+.footerSocial p{
+  font-size: 1.1rem;
+  padding: -0.6rem;
+  margin: 0.5rem;
+}
+.footerSocial a{
+  padding: -0.5rem 0.5rem  0.5rem  0.5rem;
+  margin: 0.5rem;
+}
+@media (max-width: 768px){
+  .footerBar a{
+    font-size: 1rem;
+  }
+  .footerConatcts a{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
