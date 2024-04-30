@@ -89,8 +89,9 @@ header {
     transform: all 1s;
   }
   .action:hover{
-    width: 200px;
+    width: 250px;
     cursor: pointer;
+    
   }
   .action:hover input{
    display: block;

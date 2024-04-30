@@ -155,7 +155,7 @@ input{
   input[type=submit]:hover {
     width: 100%;
     opacity: 0.8;
-    transform: scale(1.1);
+    transform: scale(1.080);
   }
 
   .footer{
