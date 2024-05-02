@@ -309,7 +309,7 @@ video::-webkit-media-controls {
   transform: scale(1.1);
 }
 .AccountSlide {
-  position: fixed; 
+  position: absolute; 
   height: 100%; 
   background-color: black; 
   color: aliceblue;
