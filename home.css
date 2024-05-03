@@ -502,6 +502,9 @@ video::-webkit-media-controls {
   color: white;
   margin: 1em 0em;
 }
+.checkout-details .checkout-button:hover{
+  background-color: transparent;
+}
 
 
 .footer{
