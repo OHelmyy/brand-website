@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO.EG</title>
+    <link rel="stylesheet" href="user_profile.css" />
+    <!-- page icon -->
+    <link rel="icon" type="image/x-icon" href="Images/Logo-removebg-preview (1).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script>
+function openCart() {
+  document.getElementById("myCart").style.width = "30rem";
+}
+
+
+function closeCart() {
+  document.getElementById("myCart").style.width = "0";
+}
+
+//java script bta3 el side nav bta3et el account
+function openAcc() {
+  document.getElementById("myAccount").style.width = "30rem";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeAcc() {
+  document.getElementById("myAccount").style.width = "0";
+}
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    </script>
+</head>
+<body>
+    <div id="myAccount" class="AccountSlide">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAcc()"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="AccountSideNav-img">
+          <img src="Images/Logo-removebg-preview (1).png" alt="">
+        </div>
+        <a href="register.html">Sign In</a>
+        <a href="signupregister.html">Sign Up</a>
+        <hr>
+        <br>
+        <a href="user_profile.html">My Profile</a>
+        <a href="user_profile.html">Orders</a>
+        <a href="#addresses">Addresses</a>
+        <a href="#logout">LogOut</a>
+  
+  
+      </div>
+  
+  
+      <!-- EL navigation bar bta3et el cart -->
+      <div id="myCart" class="Cartslide">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"><i class="fa-solid fa-arrow-right"></i></a>
+        
+        <div class="product-card">
+            <div>
+            <img src="WhatsApp Image 2024-04-23 at 4.45.39 PM.jpeg" alt="Avatar" style="width:100%">
+            </div>
+            <div class="detail-container">
+              <h4><b>product name</b></h4>
+              <p>product information</p>
+            </div>
+          </div>
+          <div >
+            number of items :(java script funcc)
+            <br>
+            total :(java script funnc)
+  
+          </div>
+      </div>
+    <header>
+        <nav>
+          <div class="head">
+            <a href="home.html"
+              ><img src="Images/Logo-removebg-preview (1).png" weight="30%"
+            /></a>
+          </div>
+          <div class="navigation">
+           <a onclick="openAcc()" title="Account"
+           ><i class="fa-solid fa-user"></i
+            ></a>
+            <a onclick="openCart()" href="#cart" title="Cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a href="#about" title="About neo"
+              ><i class="fa-solid fa-heart"></i
+            ></a>
+            <a href="contact.html" title="Contact"
+              ><i class="fa-solid fa-square-phone"></i
+            ></a>
+            <span class="action">
+              <input type="text" placeholder="Search"> 
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="userNavBar">
+        <div class="profilePic">
+            <img src="Images/images.jpeg" alt="">
+            <button class="profilePic-button" onclick="" title="edit photo"><i class="fa-solid fa-pen-to-square"></i></button> 
+        </div>
+        <button class="navBar" onclick="openPage('Account')">My Account</button>
+        <button class="navBar" onclick="openPage('Orders')">Orders</button>
+        <button class="navBar" onclick="openPage('Addresses')">Addresses</button>      
+
+      </div>
+      <div class="MyaccContainer">
+      <div id="Account" class="tabcontent">
+
+        <h1>Hello,Serag Elhelw</h1>
+        <h2>Personal information</h2>
+
+        <div class="AccInputs">
+            <div class="divContent">
+                <label for="fname">Full Name:</label><br>
+            <input type="text" placeholder="Your Name" name="name" required>
+            <button class="Edit-button" onclick="editName()" title="edit name"><i class="fa-solid fa-pen-to-square"></i></button> 
+            </div>
+
+            <div class="divContent">
+                <label for="email">Your Email:</label><br>
+            <input type="text" placeholder="Your Email" name="mail" required>
+            <button class="Edit-button" onclick="editEmail()" title="edit email"><i class="fa-solid fa-pen-to-square"></i></button> 
+            </div>
+
+            <div class="divContent">
+            <label for="password">Password:</label><br>
+            <input type="text" placeholder="Password" name="pass" required>
+            <button class="Edit-button" onclick="editPassword()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button> 
+            </div>
+        </div>
+       
+      </div>
+      
+      <div id="Orders" class="tabcontent">
+        <h3>News</h3>
+        
+      </div>
+      
+      <div id="Addresses" class="tabcontent">
+        
+        <h1>Hello,Serag Elhelw</h1>
+        <h2>Addresses</h2>
+
+        <div class="AddressInputs">
+            
+            <div class="divContent">
+            <label for="Address">Address:</label><br>
+            <input type="text" placeholder="Address" name="address" required>
+            <button class="Edit-button" onclick="editAddress()" title="edit address"><i class="fa-solid fa-pen-to-square"></i></button> 
+            </div>
+
+            <div class="divContent">
+            <label for="Appartment">Appartment,suite,etc:</label><br>
+            <input type="text" placeholder="Appartment,suite,etc" name="appartment" required>
+            <button class="Edit-button" onclick="editAppartment()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button> 
+            </div>
+
+            <div
+             class="divContent">
+                <label for="country">Country:</label>     
+                <select id="country" name="country" class="form-control">
+                <option value="Egypt">Egypt</option>
+                </select>
+            </div>
+
+               
+             <div class="divContent">
+                <label for="Governorate">Governorate:</label><br>
+                <input type="text" placeholder="Governorate" name="governorate" required>
+                <select id="state" name="State" >
+                <option value="Alexandria">Alexandria</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Assiut">Assiut</option>
+                <option value="Beheira">Beheira</option>
+                <option value="Beni Suef">Beni Suef</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Dakahlia">Dakahlia</option>
+                <option value="Damietta">Damietta</option>
+                <option value="Fayoum">Fayoum</option>
+                <option value="Gharbia">Gharbia</option>
+                <option value="Giza">Giza</option>
+                <option value="Ismailia">Ismailia</option>
+                <option value="Kafr el-Sheikh">Kafr el-Sheikh</option>
+                <option value="Matrouh">Matrouh</option>
+                <option value="Minya">Minya</option>
+                <option value="Menofia">Menofia</option>
+                <option value=" North Sinai"> North Sinai</option>
+                <option value="Port Said">Port Said</option>
+                <option value="Qualyubia">Qualyubia</option>
+                <option value="Qena">Qena</option>
+                <option value="Red Sea">Red Sea</option>
+                <option value=" Al-Sharqia"> Al-Sharqia</option>
+                <option value="Soha">Soha</option>
+                <option value="South Sinai">South Sinai</option>
+                <option value="Suez">Suez</option>
+                <option value="Luxor">Luxor</option>
+                </select>
+                </div>
+
+    
+            <div class="divContent">
+                <label for="phone">Phone:</label><br>
+                <input type="text" placeholder="Phone" name="phone" required>
+                <button class="Edit-button" onclick="editPhone()" title="edit phone "><i class="fa-solid fa-pen-to-square"></i></button> 
+            </div>
+        </div>
+       
+      </div>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+body {
+  height: 100svh;
+  width: 100%;
+}
+* {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+
+}
+header {
+  background-color: white;
+  width: 100%;
+}
+.head {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .head img {
+    height: 8em;
+  }
+  .navigation {
+    text-align: right;
+    padding: 10px;
+  }
+  .navigation a {
+    color: black;
+    background-size: 100%;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-decoration: none;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0px;
+  }
+  /*SEARCH ICON*/
+  .action{
+    position: relative;
+    top: 20%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    transition: all 1.5s;
+    width: 80px;
+    height: 32px;
+    background-color: white;
+    box-sizing:border-box;
+    border-radius: 20px;
+  }
+  .action{
+    float: left;
+  }
+ .action input{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100%;
+    height: 42.5px;
+    line-height:30px ;
+    border: none;
+    display: none;
+    color: black;
+    font-size: 1em;
+    padding: 0 15px;
+  }
+  .fa-magnifying-glass{
+    box-sizing: border-box;
+background-color: pink;
+    padding: 10px;
+    width: 40px;
+    height: 37px;
+    position: absolute;
+    top: 20%;
+    margin: 3px;
+    border-radius: 50%;
+    color:black;
+    text-align: center;
+    font-size: 1.2em ;
+    transform: all 1s;
+  }
+  .action:hover{
+    width: 250px;
+    cursor: pointer;
+    
+  }
+  .action:hover input{
+   display: block;
+}
+.action:hover .fa-magnifying-glass{
+  background:white ;
+ color: pink;
+}
+
+
+.navigation a:hover {
+    background-color: pink;
+    color: white;
+}
+.AccountSlide {
+    position: absolute; 
+    height: 100%; 
+    background-color: black; 
+    color: aliceblue;
+    width: 0; 
+    z-index: 999;
+    top: 0; 
+    right:0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 4rem; 
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .AccountSlide a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: grey;
+    display: block;
+    transition: 0.3s;
+  }
+  .AccountSlide a:hover {
+    color: white;
+  }
+  
+  .AccountSlide .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0.2rem;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+  .AccountSideNav-img{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+  }
+  .AccountSlide img{
+    color: white;
+    width: 10rem;
+  }
+  
+  .Cartslide {
+    position: fixed; 
+    height: 100%; 
+    background-color: black; 
+    color: aliceblue;
+    width: 0; 
+    z-index: 1;
+    top: 0; 
+    right:0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 4rem; 
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  
+  .Cartslide a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: grey;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .Cartslide a:hover {
+    color: white;
+  }
+  
+  
+  .Cartslide .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0.2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .product-card {
+    background-color: aliceblue;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    margin :1rem;
+    display: flex;
+      justify-content: center; 
+      
+  
+  }
+  
+  .product-card img {
+    border-radius: 5px 5px 0 0;
+    margin:2rem;
+    border-radius: 5px;
+    scale: 0.1rem;
+  }
+  .detail-container{
+    margin :3rem;
+    color: black;
+  }
+  .userNavBar{
+    background-color:  grey;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 4rem 4rem 4rem 4rem;
+    margin-top: 0.5rem;
+  }
+  .userNavBar a{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  }
+  .profilePic{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+
+  } 
+  .profilePic img{
+    width: 14rem;
+    border-radius: 10rem;
+    box-sizing: border-box;
+
+  }
+  .profilePic-button{
+    background-color: white;
+    box-sizing: border-box;
+    position: absolute;
+    border: none;
+    font-size: 1em ;
+    padding: 2px;
+  }
+  .profilePic-button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  .userNavBar a:hover{
+    color: pink;
+  }
+
+  
+  /* Style tab links */
+  .navBar {
+    background-color:gray;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+  
+  .navBar:hover {
+    background-color: #777;
+  }
+  .tabcontent {
+    color: white;
+    background-color: white;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+  }
+  .tabcontent h1{
+color: black;  
+font-size: 4rem;
+text-align: center;
+}
+.tabcontent h2{
+    color: black;  
+    font-size: 2rem;
+    text-align: center;
+    }
+
+  .MyaccContainer{
+    padding-left: 22rem;
+    margin-top: 0.5rem;
+    height: 100%;
+  }
+  .divContent{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     padding: 1rem;
+
+  }
+  .AccInputs{
+    display: flex;
+    flex-direction: column;
+  }
+  .AccInputs label{
+    color: black;
+    font-size: 1.5rem;
+
+}
+  .AccInputs input{
+
+    background-color: white;
+    width:100%; 
+    line-height:36px ;
+    border:0.2rem;
+    border-color:black ;
+    border-style: groove;
+    color: black;
+    font-size: 1.5em;
+    
+  }
+  .Edit-button{
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: none;
+    font-size: 1em ;
+    padding: 3px 0px;
+  }
+  .Edit-button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  .AddressInputs{
+    display: flex;
+    flex-direction: column;
+  }
+  .AddressInputs label{
+    color: black;
+    font-size: 1.5rem;
+  }
+  .AddressInputs select{
+    color: black;
+    font-size: 1.5rem;
+
+}
+  .AddressInputs input{
+
+    background-color: white;
+    width:100%; 
+    line-height:36px ;
+    border:0.2rem;
+    border-color:black ;
+    border-style: groove;
+    color: black;
+    font-size: 1.5em;
+    
+  }
+
+  
+
+  
+  
