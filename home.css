@@ -45,7 +45,65 @@ header {
     padding: 20px;
     margin: 0px;
   }
-  .navigation a:hover {
+  /*SEARCH ICON*/
+  .action{
+    position: relative;
+    top: 20%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    transition: all 1.5s;
+    width: 80px;
+    height: 32px;
+    background-color: white;
+    box-sizing:border-box;
+    border-radius: 20px;
+  }
+  .action{
+    float: left;
+  }
+  input{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100%;
+    height: 42.5px;
+    line-height:30px ;
+    border: none;
+    display: none;
+    color: black;
+    font-size: 1em;
+    padding: 0 15px;
+  }
+  .fa-magnifying-glass{
+    box-sizing: border-box;
+background-color: pink;
+    padding: 10px;
+    width: 40px;
+    height: 37px;
+    position: absolute;
+    top: 20%;
+    margin: 3px;
+    border-radius: 50%;
+    color:black;
+    text-align: center;
+    font-size: 1.2em ;
+    transform: all 1s;
+  }
+  .action:hover{
+    width: 250px;
+    cursor: pointer;
+    
+  }
+  .action:hover input{
+   display: block;
+}
+.action:hover .fa-magnifying-glass{
+  background:white ;
+ color: pink;
+}
+
+
+.navigation a:hover {
     background-color: pink;
     color: white;
   }
@@ -251,8 +309,51 @@ video::-webkit-media-controls {
 .intro-button:hover {
   transform: scale(1.1);
 }
+.AccountSlide {
+  position: absolute; 
+  height: 100%; 
+  background-color: black; 
+  color: aliceblue;
+  width: 0; 
+  z-index: 999;
+  top: 0; 
+  right:0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 4rem; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.AccountSlide a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 3.5rem;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+.AccountSlide a:hover {
+  color: white;
+}
+
+.AccountSlide .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0.2rem;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+.AccountSideNav-img{
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.AccountSlide img{
+  color: white;
+  width: 10rem;
+}
+
 .Cartslide {
-  position: fixed; 
+  position: absolute; 
   height: 100%; 
   background-color: black; 
   color: aliceblue;
@@ -260,9 +361,12 @@ video::-webkit-media-controls {
   z-index: 1;
   top: 0; 
   right:0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x:hidden; /* Disable horizontal scroll */
+  overflow-y: scroll;
   padding-top: 4rem; 
+  margin-bottom: 4rem; 
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
 }
 
 
@@ -288,45 +392,142 @@ video::-webkit-media-controls {
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-.product-card {
-  background-color: aliceblue;
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  margin :1rem;
+.cart-products{
+  display:flexbox;
+  margin-bottom: 100px;
+}
+.cart-products img {
+  filter: brightness(100%);
+}
+
+.Product-1{
+  max-width: 16em;
+  background-color:grey ;
+  padding: 1em;
+  margin-top: 40px;
+  margin-left: 40px;
+  /* box-shadow: 0 5px 5px #e1e1e1; */
+  border-radius: 10px;
+  font-family: "Roboto",sans-serif;
+}
+.Product-1 img{
+  max-width: 100%;
+
+}
+.Product-1 h4{
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+.Product-1 div{
+  font-size: 1em;
   display: flex;
-    justify-content: center; 
-    
-
+  justify-content: space-between;
+  align-items: center;
 }
-
-
-.product-card img {
-  border-radius: 5px 5px 0 0;
-  margin:2rem;
-  border-radius: 5px;
-  scale: 0.1rem;
+.Product-1 button{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
 }
-.detail-container{
-  margin :3rem;
+.Product-1 button:hover{
+  cursor: pointer;
+  background-color: grey;
+
+  transition-duration: 0.3s;
+}
+.Product-1:hover{
+  background-color: white;
   color: black;
+  transition-duration: 0.3s;
 }
+.Jacket-1{
+  max-width: 16em;
+  background-color:grey ;
+  padding: 1em;
+  margin-top: 40px;
+  margin-left: 40px;
+  /* box-shadow: 0 5px 5px #e1e1e1; */
+  border-radius: 10px;
+  font-family: "Roboto",sans-serif;
+}
+.Jacket-1 img{
+  max-width: 100%;
+
+}
+.Jacket-1 h4{
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+.Jacket-1 div{
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Jacket-1 button{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
+}
+.Jacket-1 button:hover{
+  cursor: pointer;
+  background-color: gray;
+  transition-duration: 0.3s;
+}
+.Jacket-1:hover{
+  background-color: white;
+  color: black;
+  transition-duration: 0.3s;
+}
+.checkout-details{
+  margin: 40px;
+  color:white;
+  
+}
+.checkout-details p{
+  font-size: 2em;
+}
+
+.checkout-details .checkout-button{
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  background-color: grey;
+  border: white;
+  border-radius: 1rem;
+  border-style: groove;
+  color: white;
+  margin: 1em 0em;
+}
+.checkout-details .checkout-button:hover{
+  background-color: transparent;
+}
+
 
 .footer{
-  background-color: black;
+  background-color: white;
   width: 100%;
   display: flex;
 
 }
 .footerContainer{
-  background-color: black;
+  background-color: white;
   width: 100%;
   flex-direction: column;
 }
 .footerImage Img{
   display: flex;
-  background-color: whitesmoke;
-  width: 6rem;
+  color: white;
+  width: 4rem;
   justify-content: center;
+  position: absolute;
 }
 .footerImage{
   object-fit: contain;
@@ -338,7 +539,7 @@ video::-webkit-media-controls {
 }
 .footerConatcts a{
   width: 100%;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,27 +551,50 @@ video::-webkit-media-controls {
 }
 .footerBar{
   display: flex;
-  background-color: black;
+  background-color: white;
   padding: 0.5rem;
 }
 .footerBar a{
   width: 100%;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0.3rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
 
 }
 .footerBar a:hover{
-  color: pink;
+  color: deeppink;
   transition: 0.5;
 filter: drop-shadow(15);
 }
-a:visited {
-  color:palevioletred;
+.footerSocial{
+  padding: 0.5rem;
 }
+.footerSocial p{
+  font-size: 1.1rem;
+  padding: -0.6rem;
+  margin: 0.5rem;
+}
+.footerSocial a{
+  padding: -0.5rem 0.5rem  0.5rem  0.5rem;
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px){
+  .footerBar a{
+    font-size: 1rem;
+  }
+  .footerConatcts a{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+

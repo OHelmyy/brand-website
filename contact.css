@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+body {
+    height: 100svh;
+    width: 100%;
+    
+  }
+  * {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+  }
+  section{
+    padding: 100px 50px;
+}
+.contactInfo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.title{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    
+}
+.ContactsContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon{
+    width: 1rem;
+}
+.info{
+    display: flex;
+    margin-top: 50px;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 10px ;
+    padding: 35px;
+    margin: 15px;
+    transition:0.7s ease ;
+}
+.info:hover{
+    transform: scale(1.1);
+}
+.information{
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.ContactHead{
+    background-image:url(Images/76dd3ece-fe71-4d4f-b4a6-06d288583107.jpeg);
+    background-size: cover;
+    padding: 5rem;
+    border: 2rem;
+}
+.ContactHead h1{
+    color: black;
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactHead h3{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactInfo{
+
+    background-color: white;
+}
+.title{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    
+}
+.ContactsContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.info{
+    background-color: pink;
+    width: 20em;
+    display: flex;
+    margin-top: 50px;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 10px ;
+    padding: 25px;
+    margin: 15px;
+    transition:0.7s ease ;
+}
+.info:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+.information{
+    color: black;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.messageUs{
+background-color: black;
+}
+.title2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+input{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=submit]{
+    background-color: pink;
+  }
+  input[type=submit]:hover {
+    width: 100%;
+    opacity: 0.8;
+    transform: scale(1.080);
+  }
+
+  .footer{
+    background-color: white;
+    width: 100%;
+    display: flex;
+  
+  }
+  .footerContainer{
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+  }
+  .footerImage Img{
+    display: flex;
+    color: white;
+    width: 4rem;
+    justify-content: center;
+    position: absolute;
+  }
+  .footerImage{
+    object-fit: contain;
+  }
+  .footerConatcts{
+    display: flex;
+    padding: 1rem;
+  
+  }
+  .footerConatcts a{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0.3em;
+    text-transform: uppercase;
+    text-shadow: 2px;
+   
+  }
+  .footerBar{
+    display: flex;
+    background-color: white;
+    padding: 0.5rem;
+  }
+  .footerBar a{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+  }
+  .footerBar a:hover{
+    color: deeppink;
+    transition: 0.5;
+  filter: drop-shadow(15);
+  }
+  .footerSocial{
+    padding: 0.5rem;
+  }
+  .footerSocial p{
+    font-size: 1.1rem;
+    padding: -0.6rem;
+    margin: 0.5rem;
+  }
+  .footerSocial a{
+    padding: -0.5rem 0.5rem  0.5rem  0.5rem;
+    margin: 0.5rem;
+  }
+  
+  @media (max-width: 768px){
+    .footerBar a{
+      font-size: 1rem;
+    }
+    .footerConatcts a{
+      font-size: 1rem;
+    }
+  }
+  
