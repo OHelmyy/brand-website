@@ -396,6 +396,10 @@ video::-webkit-media-controls {
   display:flexbox;
   margin-bottom: 100px;
 }
+.cart-products img {
+  filter: brightness(100%);
+}
+
 .Product-1{
   max-width: 16em;
   background-color:grey ;
@@ -501,6 +505,9 @@ video::-webkit-media-controls {
   border-style: groove;
   color: white;
   margin: 1em 0em;
+}
+.checkout-details .checkout-button:hover{
+  background-color: transparent;
 }
 
 
