@@ -68,20 +68,21 @@ header {
     width: 100%;
     height: 42.5px;
     line-height:30px ;
-    border: 0;
+    border: none;
     display: none;
     color: black;
     font-size: 1em;
-    padding: 0 20px;
+    padding: 0 15px;
   }
   .fa-magnifying-glass{
     box-sizing: border-box;
+background-color: pink;
     padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
+    width: 40px;
+    height: 37px;
     position: absolute;
     top: 20%;
-    right: 5%;
+    margin: 3px;
     border-radius: 50%;
     color:black;
     text-align: center;
@@ -409,6 +410,9 @@ video::-webkit-media-controls {
   margin :3rem;
   color: black;
 }
+
+
+
 
 .footer{
   background-color: white;
