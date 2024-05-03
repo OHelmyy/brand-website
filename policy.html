@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="policy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Policy</title>
+</head>
+<body>
+
+  
+    <div class="intro">
+        <h1 class="policy-header">
+            <span class="policy">Pol</span><span class="policy">icy.</span></h1>
+        </div>
+        
+         
+        
+
+        <div class="policies">
+          <header>
+          <nav>
+            <div class="head">
+              <a href="home.html"
+                ><img src="Images/Logo-removebg-preview (1).png" weight="30%"
+              /></a>
+            </div>
+            <div class="navigation">
+             <a onclick="openAcc()" title="Account"
+             ><i class="fas fa-user"></i
+              ></a>
+              <a onclick="openCart()" href="#cart" title="Cart"
+                ><i class="fas fa-shopping-cart"></i>
+              </a>
+              <a href="#about" title="About neo"
+                ><i class="fas fa-heart"></i
+              ></a>
+              <a href="contact.html" title="Contact"
+                ><i class="fas fa-square-phone"></i
+              ></a>
+             
+            </div>
+          </nav>
+        </header>
+
+            <h2>NEO policy</h2>
+            <ul>
+                <li>No return, exchange only</li>
+                <li>size exchanges are allowed only when items are in a perfect condition 
+                    and returned within the NEO packaging you've received them in.</li>
+                <li>Fast shipping and delivery.</li>
+                <li>Quality guarantee for all our products.</li>
+                <li>Responsive customer support.</li>
+            </ul>
+
+            <hr>
+        </div>
+       <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  let intro = document.querySelector('.intro');
+  let policySpan = document.querySelectorAll('.policy');
+
+  setTimeout(() => {
+    policySpan.forEach((span, idx) => {
+      setTimeout(() => {
+        span.classList.add('active');
+      }, (idx + 1) * 400);
+    });
+
+    setTimeout(() => {
+      policySpan.forEach((span, idx) => {
+        setTimeout(() => {
+          span.classList.remove('active');
+          span.classList.add('fade');
+        }, (idx + 1) * 50);
+      });
+    }, 2000);
+
+    setTimeout(() => {
+      intro.style.top = '-100vh'; 
+    }, 2300);
+  });
+});
+       </script>
+        
+        <footer>
+            <div class="footerContainer">
+              <div class="footerImage">
+                <a href=""><img src="C:\Users\basse\OneDrive\Desktop\web\brand-website\Images\Logo-removebg-preview (1).png" alt=""></a>
+              </div>
+              <div class="footerConatcts">
+                <a><i class="fas fa-phone-volume"></i>19666</a>
+                <a><i class="fas fa-location-dot"></i>Miuegypt</a>
+                <a><i class="fas fa-envelope"></i>kjwediu@gmail.com</a>
+              </div>
+              <hr>
+              <div class="footerBar">
+                <a href="home.html">Home</a>
+                <a href="register.html">Account</a>
+                <a href="#privacypolicy">Privacy Policy</a>
+                <a href="#help">Support</a>
+                <a href="">About</a>
+              </div>
+              <div class="footerSocial">
+                <p>FOLLOW US</p>
+                <a href="https://www.instagram.com/neo__eg/"><i class="fab fa-instagram fa-xl" style="color: #000000;"></i></a>
+                <a href="https://www.tiktok.com/@neo__eg"><i class="fab brands fa-tiktok fa-xl" style="color: #000000;"></i></a>
+              </div>
+            </div>
+           </footer>
+      
+
+
+</body>
+
+</html>
