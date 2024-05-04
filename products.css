@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+}
+.Order{
+    display: flex;
+    background-color: whitesmoke;
+}
+.Order .OrderImg{
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.Order .Ordertxt{
+    margin-top: 7px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Clothes{
+    display: flex;
+
+}
+.Clothes img{
+    padding: 70px;  
+    margin-left: 160px;  
+}
+.Clothestxt{
+    font-family: "Roboto", sans-serif;
+    margin-top: 120px;
+}
+.toCart{
+    margin-top: 50px;
+}
+.toCart input{
+    border-radius: 20px;
+    height: 25px;
+}
+.toCart button{
+    border-radius: 20px;
+    height: 35px;
+    width: 180px;
+    background-color: aqua;
+    font-weight: bold;
+}
+.toCart button:hover{
+    transition-duration: 0.3s;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.description{
+    margin-top: 50px;
+}
+.size{
+    border-radius: 20px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    
+}
+footer{
+    background-color: whitesmoke;
+}
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+}
