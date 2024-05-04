@@ -21,28 +21,45 @@
         <!-- code sign up  -->
 
         <div class="form-register sign-up">
-            <form>
+          <form id="form" onsubmit="validate()">
 
               <div class="h1">
                 <h1>Create your account</h1>
               </div>
                 
-              <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm Password">
-               
+              <input type="text" id="Name" placeholder="Full Name">
+              <div id="fullNameError" class="error"></div>
+
+
+
+                <input type="email"  id="email"  placeholder="Email">
+                <div id="emailError" class="error"></div>
+
+                <input type="text" id="phone" placeholder="Phone number">
+                <div id="phoneError" class="error"></div>
+
+
+                <input type="password"  id="password" placeholder="Password">
+                <div id="passwordError" class="error"></div>
+
+
+
+                <input type="password"   id="password2" placeholder="Confirm Password">
+                <div id="confirmPasswordError" class="error"></div>
+
+
+
                 <div class="checkbox">
                     <input type="checkbox" id="check"> 
-                    <label for="check"> You confirm that you have read our <a href="privacy_policy.html">Privacy Policy</a> and  
+                    <label for="check"> You confirm that you have read our <a href="policy.html"> <br>Privacy Policy</a> and  
                       
-                      accept our<a href="terms_conditions.html">Terms & Conditions</a>.</label>
-
+                      accept our<a href="policy.html">Terms & Conditions</a>
+                    </label>
+                    <div id="termsError" class="error"></div>
                 </div>
                
                 
-                <button id="createAccountButton" onclick="changeIfSign()">Create account</button>
-
+                <button type="submit" id="createAccountButton">Create account</button>
 
 
                 <p>Sign up with social media</p>
@@ -54,8 +71,8 @@
                
                 
                 <div class="icons">
-                  <a href="#" class="goggle"> <i class="fa-brands fa-google fa-beat fa-2xl"></i></a>
-                  <a href="#" class="fb"><i class="fa-brands fa-facebook fa-beat fa-2xl" ></i></a>
+                  <a href="https://myaccount.google.com/" class="goggle"> <i class="fa-brands fa-google fa-beat fa-2xl"></i></a>
+                  <a href="https://www.facebook.com/" class="fb"><i class="fa-brands fa-facebook fa-beat fa-2xl" ></i></a>
                  
                 </div>
           </div> 
@@ -69,7 +86,7 @@
 
     
    
-    <script src="register.js"></script>
+    <script src="signup.js"></script>
    
 </body>
 
