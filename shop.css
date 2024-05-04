@@ -1,7 +1,9 @@
 body{
     margin: 0px;
 }
-
+.head{
+    background-color: whitesmoke;
+}
 .head img {
     height: 5em;
 }
@@ -79,20 +81,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.Product-1 button{
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-}
-.Product-1 button:hover{
-    cursor: pointer;
-    background-color: gray;
-    transition-duration: 0.3s;
-}
+
 .Product-1:hover{
     background-color: rgb(43, 42, 42);
     color: white;
@@ -122,20 +111,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.Product-2 button{
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-}
-.Product-2 button:hover{
-    cursor: pointer;
-    background-color: gray;
-    transition-duration: 0.3s;
-}
+
 .Product-2:hover{
     background-color: rgb(43, 42, 42);
     color: white;
@@ -192,64 +168,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.Jacket-1 button{
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-}
-.Jacket-1 button:hover{
-    cursor: pointer;
-    background-color: gray;
-    transition-duration: 0.3s;
-}
-.Jacket-1:hover{
-    background-color: rgb(43, 42, 42);
-    color: white;
-    transition-duration: 0.3s;
-}
-.Jacket-2{
-    max-width: 16em;
-    background-color:white ;
-    padding: 1em;
-    margin-top: 40px;
-    margin-left: 40px;
-    box-shadow: 0 5px 5px #e1e1e1;
-    border-radius: 10px;
-    font-family: "Roboto",sans-serif;
-}
-.Jacket-2 img{
-    max-width: 100%;
 
-}
-.Jacket-2 h4{
-    font-size: 1.3em;
-    margin: 0.5em 0;
-}
-.Jacket-2 div{
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Jacket-2 button{
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-}
-.Jacket-2 button:hover{
-    cursor: pointer;
-    background-color: gray;
-    transition-duration: 0.3s;
-}
-.Jacket-2:hover{
+.Jacket-1:hover{
     background-color: rgb(43, 42, 42);
     color: white;
     transition-duration: 0.3s;
@@ -306,20 +226,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.Sweater-1 button{
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-}
-.Sweater-1 button:hover{
-    cursor: pointer;
-    background-color: gray;
-    transition-duration: 0.3s;
-}
+
 .Sweater-1:hover{
     background-color: rgb(43, 42, 42);
     color: white;
@@ -349,24 +256,14 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.Sweater-2 button{
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-}
-.Sweater-2 button:hover{
-    cursor: pointer;
-    background-color: gray;
-    transition-duration: 0.3s;
-}
+
 .Sweater-2:hover{
     background-color: rgb(43, 42, 42);
     color: white;
     transition-duration: 0.3s;
+}
+footer{
+    background-color: whitesmoke;
 }
 
 footer img{
