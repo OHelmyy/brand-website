@@ -58,44 +58,64 @@ document.getElementById("defaultOpen").click();
 <body>
   <script src="Project.js"></script>
 
-    <div id="myAccount" class="AccountSlide">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeAcc()"><i class="fa-solid fa-arrow-right"></i></a>
-        <div class="AccountSideNav-img">
-          <img src="Images/Logo-removebg-preview (1).png" alt="">
+   <!-- EL navigation bar bta3et el account -->
+   <div id="myAccount" class="AccountSlide">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeAcc()"><i class="fa-solid fa-arrow-right"></i></a>
+    <div class="AccountSideNav-img">
+      <img src="Images/Logo-removebg-preview (1).png" alt="">
+    </div> 
+    <div class="ifNotSign">
+    <a href="register.html">Sign In</a>
+    <a href="signupregister.html">Sign Up</a>
+    <hr>
+    </div>
+    <div class="ifSign">
+    <a href="#UserProfile">My Profile</a>
+    <a href="#history">Orders</a>
+    <a href="#addresses">Addresses</a>
+    <a href="#logout">LogOut</a>
+    </div>
+
+
+  </div>
+
+
+  <!-- EL navigation bar bta3et el cart -->
+  <div id="myCart" class="Cartslide">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"><i class="fa-solid fa-arrow-right"></i></a>
+    
+    <div class="cart-products">
+      
+        <div class="Product-1">
+          <img src="Images/Item1.jpg">
+          <h4>PINK HOODIE</h4>
+          <div>
+              <span>800EGP</span>
+              <button>-</button><span class="quantity">1</span><button>+</button>
+          </div>
+      
+
+      </div>
+      <div class="Jacket-1">
+        <img src="Images/Jacket1.jpg">
+        <h4>Black Jacket</h4>
+        <div>
+            <span>800EGP</span>
+            <button>-</button><span class="quantity">1</span><button>+</button>
         </div>
-        <a href="register.html">Sign In</a>
-        <a href="signupregister.html">Sign Up</a>
-        <hr>
-        <br>
-        <a href="user_profile.html">My Profile</a>
-        <a href="user_profile.html">Orders</a>
-        <a href="#addresses">Addresses</a>
-        <a href="#logout">LogOut</a>
-  
-  
+    
+    </div>
+    <div class="checkout-details">
+    <p>number of items: 2</p>
+    
+      <p>total: 1600 £</p>
+      
+      <button onclick="" class="checkout-button">checkout</button>
+
+    </div>
       </div>
-  
-  
-      <!-- EL navigation bar bta3et el cart -->
-      <div id="myCart" class="Cartslide">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"><i class="fa-solid fa-arrow-right"></i></a>
-        
-        <div class="product-card">
-            <div>
-            <img src="Images/img5.jpg" alt="Avatar" style="width:100%">
-            </div>
-            <div class="detail-container">
-              <h4><b>product name</b></h4>
-              <p>product information</p>
-            </div>
-          </div>
-          <div >
-            number of items :(java script funcc)
-            <br>
-            total :(java script funnc)
-  
-          </div>
-      </div>
+      
+  </div>
     <header>
         <nav>
           <div class="head">
