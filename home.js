@@ -14,7 +14,7 @@ function slider() {
 }
 // go to shop function
 function goToShop() {
-    window.location.href = ""; // Replace "shop.html" with the actual URL of your shop page
+    window.location.href = "shop.html"; // Replace "shop.html" with the actual URL of your shop page
   }
   function openCart() {
 document.getElementById("myCart").style.width = "30rem";
