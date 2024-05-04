@@ -12,45 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <!-- slideshow -->
-    <script type="text/javascript">
-      var myIndex = 0;
-      function slider() {
-        var images = document.getElementsByClassName("mySlides");
-        for (var i = 0; i < images.length; i++) {
-          images[i].style.display = "none";
-        }
-
-        if (myIndex > images.length - 1) {
-          myIndex = 0;
-        }
-        images[myIndex].style.display = "flex";
-        myIndex++;
-        setTimeout(slider, 5000); // Change image every 5 seconds
-      }
-      // go to shop function
-      function goToShop() {
-          window.location.href = ""; // Replace "shop.html" with the actual URL of your shop page
-        }
-        function openCart() {
-  document.getElementById("myCart").style.width = "30rem";
-}
-
-
-function closeCart() {
-  document.getElementById("myCart").style.width = "0";
-}
-
-//java script bta3 el side nav bta3et el account
-function openAcc() {
-  document.getElementById("myAccount").style.width = "30rem";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeAcc() {
-  document.getElementById("myAccount").style.width = "0";
-}
-    </script>
+    <script src="home.js"></script>
   </head>
 
   <body>
@@ -65,7 +27,7 @@ function closeAcc() {
       <a href="signupregister.html">Sign Up</a>
       <hr>
       <br>
-      <a href="user_profile.html">My Profile</a>
+      <a href="#UserProfile">My Profile</a>
       <a href="#history">Orders</a>
       <a href="#addresses">Addresses</a>
       <a href="#logout">LogOut</a>
@@ -124,7 +86,7 @@ function closeAcc() {
           <a onclick="openCart()" href="#cart" title="Cart"
             ><i class="fa-solid fa-cart-shopping"></i
           ></a>
-          <a href="#about" title="About neo"
+          <a href="about.html" title="About neo"
             ><i class="fa-solid fa-heart"></i
           ></a>
           <a href="contact.html" title="Contact"
@@ -229,9 +191,9 @@ function closeAcc() {
           <a href=""><img src="Images/Logo-removebg-preview (1).png" alt=""></a>
         </div>
         <div class="footerConatcts">
-          <a><i class="fa-solid fa-phone-volume"></i>19666</a>
+          <a><i class="fa-solid fa-phone-volume"></i>+20 1091651645</a>
           <a><i class="fa-solid fa-location-dot"></i>Miuegypt</a>
-          <a><i class="fa-solid fa-envelope"></i>kjwediu@gmail.com</a>
+          <a><i class="fa-solid fa-envelope"></i>neo__eg@gmail.com</a>
         </div>
         <hr>
         <div class="footerBar">
@@ -239,7 +201,7 @@ function closeAcc() {
           <a href="register.html">Account</a>
           <a href="policy.html">Privacy Policy</a>
           <a href="contact.html">Support</a>
-          <a href="">About</a>
+          <a href="about.html">About</a>
         </div>
         <div class="footerSocial">
           <p>FOLLOW US</p>
