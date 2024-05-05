@@ -479,6 +479,21 @@ text-align: center;
   .AddressInputs input{
     display: none;
   }
+  .order-table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: grey;
+  }
+  .order-table th,.order-table td{
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    text-align: left;
+    
+  }
+  .order-table th{
+    background-color: pink;
+    color: black;
+  }
   .footer{
     background-color: white;
     width: 100%;
