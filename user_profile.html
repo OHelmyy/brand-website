@@ -54,6 +54,7 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
     </script> -->
+   
 </head>
 <body>
   <script src="Project.js"></script>
@@ -130,7 +131,7 @@ document.getElementById("defaultOpen").click();
             <a onclick="openCart()" href="#cart" title="Cart"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
-            <a href="#about" title="About neo"
+            <a href="about.html" title="About neo"
               ><i class="fa-solid fa-heart"></i
             ></a>
             <a href="contact.html" title="Contact"
@@ -162,21 +163,25 @@ document.getElementById("defaultOpen").click();
 
         <div class="AccInputs">
             <div class="divContent">
-                <label for="fname">Full Name:</label><br>
-            <input type="text" placeholder="Your Name" name="name" required>
-            <button class="Edit-button" onclick="editName()" title="edit name"><i class="fa-solid fa-pen-to-square"></i></button> 
+                <label for="fname">Full Name:</label>
+                <span>Lionel Messi De santos junior</span>
+            <input id="changeName" type="text" placeholder="Your Name" name="name" required>
+            <button class="Edit-button" onclick=editName() title="edit name"><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
 
             <div class="divContent">
                 <label for="email">Your Email:</label><br>
-            <input type="text" placeholder="Your Email" name="mail" required>
+                <span>LionelMessi10@gmail.com</span>
+            <input id="changeEmail" type="text" placeholder="Your Email" name="mail" required>
             <button class="Edit-button" onclick="editEmail()" title="edit email"><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
 
             <div class="divContent">
             <label for="password">Password:</label><br>
-            <input type="text" placeholder="Password" name="pass" required>
-            <button class="Edit-button" onclick="editPassword()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button> 
+            <span id="showPass" class="showPass" >************</span>
+            <input id="changePass" type="password" placeholder="Password" name="pass" required>
+            <button class="Edit-button" onclick="editPassword()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="show-password" onclick="showPassword()" title="Show password"><i class="fa-solid fa-eye"></i></button> 
             </div>
         </div>
        
@@ -196,18 +201,19 @@ document.getElementById("defaultOpen").click();
             
             <div class="divContent">
             <label for="Address">Address:</label><br>
-            <input type="text" placeholder="Address" name="address" required>
+            <span>Mountain view compund 6 October </span>
+            <input  id="changeAddress" type="text" placeholder="Address" name="address" required>
             <button class="Edit-button" onclick="editAddress()" title="edit address"><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
 
             <div class="divContent">
             <label for="Appartment">Appartment,suite,etc:</label><br>
-            <input type="text" placeholder="Appartment,suite,etc" name="appartment" required>
+            <span>villa no.97 </span>
+            <input id="changeAppartment" type="text" placeholder="Appartment,suite,etc" name="appartment" required>
             <button class="Edit-button" onclick="editAppartment()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
 
-            <div
-             class="divContent">
+            <div class="divContent">
                 <label for="country">Country:</label>     
                 <select id="country" name="country" class="form-control">
                 <option value="Egypt">Egypt</option>
@@ -251,7 +257,8 @@ document.getElementById("defaultOpen").click();
     
             <div class="divContent">
                 <label for="phone">Phone:</label><br>
-                <input type="text" placeholder="Phone" name="phone" required>
+                <span>01000000010 </span>
+                <input id="changePhone" type="text" placeholder="Phone" name="phone" required>
                 <button class="Edit-button" onclick="editPhone()" title="edit phone "><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
         </div>
