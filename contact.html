@@ -54,17 +54,36 @@
         </div>
 
     </section>
+
+
     <section class="messageUs">
+        <form id="form" onsubmit="validate4()">
+
         <h2 class="title2">Message Us</h2>
+
+
         <div class="messageContainer">
-            <input type="text" placeholder="Name" name="name" required>
-            <input type="text" placeholder="Email address" name="mail" required>
-            <input type="text" placeholder="Message" name="message" required>
+
+            <input type="text" id="Name"  placeholder="Name">
+            <div id="fullNameError" style="color: #ffffff;" class="error"></div>
+
+            <input type="email"  id="email" placeholder="Email address"  >
+            <div id="emailError" style="color: #ffffff;" class="error"></div>
+
+            <input type="text" id="message" placeholder="Message">
+            <div id="messageError" style="color: #ffffff;" class="error"></div>
+        
         </div>
-        <div class="container">
-            <input type="submit" value="submit">
-        </div>
+        
+        <button  id="submit">  Submit </button>
+
+        </form>
     </section>
+    
+    
+    
+    
+    
     <footer>
         <div class="footerContainer">
           <div class="footerImage">
@@ -90,5 +109,8 @@
           </div>
         </div>
        </footer>
+
+<script src="contact.js"></script>
+
 </body>
 </html>
