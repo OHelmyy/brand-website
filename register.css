@@ -115,27 +115,24 @@ margin: 5%;
 
 /* bnzbt shkl w font buttoms */
 .register button{
-    background-color: #000000;
-    color: #fff;
-    font-size: 12px;
-    padding: 10px 45px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-   
+  background-color: #000000; /* Green background */
+border: none; /* Remove borders */
+color: white; /* White text */
+padding: 15px 32px; /* Padding */
+text-align: center; /* Center text */
+text-decoration: none; /* Remove underline */
+display: inline-block; /* Make it a block element to center it */
+font-size: 16px; /* Font size */
+margin: 4px 2px; /* Margin */
+transition-duration: 0.4s; /* Transition duration */
+cursor: pointer; /* Cursor on hover */
+border-radius: 8px; /* Rounded corners */
 }
 
-
-
-/* Change button size on hover */
 .register button:hover {
-  color: #fff; 
-  transform: scale(1.1);
-
+background-color: #45a049; /* Darker green on hover */
 }
+
 
 
 
