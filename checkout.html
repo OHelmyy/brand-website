@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+
+<link rel="stylesheet" href="chekout.css">
+<link rel="icon" type="image/x-icon" href="images/Logo-removebg-preview (1).png" />
+
+</head>
+<body>
+<h2>Checkout Form</h2>
+
+<div class="checkout">
+  
+
+    
+        <div class="information">
+          <h3>Billing Address</h3>
+          <label for="fname">Full Name</label>
+          <input type="text"  placeholder="Full name" required>
+
+
+          <label for="email"> Email</label>
+          <input type="email"  placeholder="email">
+
+
+          <label for="adress"> Address</label>
+          <input type="text"  placeholder="Addess">
+
+
+          <label for="phone">phone number</label>
+          <input type="text" id="phone" name="phone" placeholder="phone number">
+
+
+
+
+          <div class="divContent">
+          <label for="Governorate">Governorate:</label><br>
+          
+          <select id="state" name="State" >
+          <option value="Alexandria">Alexandria</option>
+          <option value="Aswan">Aswan</option>
+          <option value="Assiut">Assiut</option>
+          <option value="Beheira">Beheira</option>
+          <option value="Beni Suef">Beni Suef</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Dakahlia">Dakahlia</option>
+          <option value="Damietta">Damietta</option>
+          <option value="Fayoum">Fayoum</option>
+          <option value="Gharbia">Gharbia</option>
+          <option value="Giza">Giza</option>
+          <option value="Ismailia">Ismailia</option>
+          <option value="Kafr el-Sheikh">Kafr el-Sheikh</option>
+          <option value="Matrouh">Matrouh</option>
+          <option value="Minya">Minya</option>
+          <option value="Menofia">Menofia</option>
+          <option value=" North Sinai"> North Sinai</option>
+          <option value="Port Said">Port Said</option>
+          <option value="Qualyubia">Qualyubia</option>
+          <option value="Qena">Qena</option>
+          <option value="Red Sea">Red Sea</option>
+          <option value=" Al-Sharqia"> Al-Sharqia</option>
+          <option value="Soha">Soha</option>
+          <option value="South Sinai">South Sinai</option>
+          <option value="Suez">Suez</option>
+          <option value="Luxor">Luxor</option>
+          </select>
+          </div>
+
+
+
+
+              <div class="payment" >   
+
+          <h3>Payment</h3>
+          <input type="radio" id="cash" name="payment" value="cash">
+          <label for="cash">Cash</label>
+          <div id="cashMessage" >You will pay when the delivery comes to your home.</div>
+
+
+
+
+
+          <input type="radio" id="card" name="payment" value="card" checked>
+          <label for="card">Credit/Debit Card</label>
+
+
+          <div id="visaDetails">
+
+
+
+
+            <label for="cname">Name on Card</label>
+<input type="text" id="cname" name="cname" placeholder="Ahmed">
+
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="ccnum" placeholder="1111-2222-3333-4444" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"> <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="December">
+
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2027">
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" pattern="[0-9]{3}"> 
+            </div>
+          
+        </div>
+      </div>
+
+      <input type="submit" value="complete order" class="btn">
+    </div>
+
+
+
+
+
+
+
+<script src="chekout.js">
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
