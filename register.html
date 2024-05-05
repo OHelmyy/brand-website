@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <script src="Project.js"></script>
+
 
     <!--  start code -->
     <div class="register" id="register">
@@ -22,7 +22,7 @@
         <!-- code sign in  -->
 
         <div class="form-register sign-in">
-          <form onsubmit="return validate()">
+          <form id="form" onsubmit="validate1()">
 
               <div class="h1">
                 <h1>Sign In</h1>
@@ -30,15 +30,19 @@
                 
              
               <input type="email" id="email" placeholder="Email">
+              <div id="emailError" class="error"></div>
+
+
               <input type="password" id="password" placeholder="Password">
-              
+              <div id="passwordError" class="error"></div>
               
 <div class="password">
                 <a href="forget_password.html">Lost your password?</a>
               
               </div>
 
-                <button>Sign In</button>
+                
+              <button  id="createAccountButton">Sign In</button>
 
 
                 <div class="donot-have-account">
@@ -58,22 +62,25 @@
                
                 
                 <div class="icons">
-                  <a href="#" class="goggle"><i class="fa-brands fa-google fa-beat fa-2xl"></i></i></a>
-                  <a href="#" class="fb"><i class="fa-brands fa-facebook fa-beat fa-2xl" ></i></a>
-                 
-                </div>
+                  <a href="https://myaccount.google.com/" class="goggle"><i class="fa-brands fa-google fa-beat fa-2xl"></i></i></a>
+                  <a href="https://www.facebook.com/" class="fb"><i class="fa-brands fa-facebook fa-beat fa-2xl" ></i></a>
+
+                
+              </div>
+
+            </form>
           </div> 
 
 
               
-            </form>
+        
         </div>
 
 
 
     
    
-    <script src="signin.js"></script>
+    <script src="register.js"></script>
    
 </body>
 
