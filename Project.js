@@ -45,6 +45,29 @@ function changeIfSign(){
 
 
 }
+function editName(){
+  document.getElementById("changeName").style.display="block";
+}
+function editEmail(){
+  document.getElementById("changeEmail").style.display="block";
+}
+function editPassword(){
+  document.getElementById("changePass").style.display="block";
+}
+function editAddress(){
+  document.getElementById("changeAddress").style.display="block";
+}
+function editAppartment(){
+  document.getElementById("changeAppartment").style.display="block";
+}
+function editPhone(){
+  document.getElementById("changePhone").style.display="block";
+}
+function showPassword(){
+  document.getElementById("showPass").innerHTML="<span>worldcup_2022</span>";
+}
+
+
 // Sign Up---------------------------------------------------------------------------------
 function validate() {
     var Name = document.getElementById('Name');

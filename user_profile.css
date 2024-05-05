@@ -362,6 +362,16 @@ text-align: center;
     font-size: 1.5em;
     
   }
+  .AccInputs span{
+    color: black;
+    font-size: 1.2rem;
+  }
+  .AccInputs input{
+    display: none;
+  }
+  .AddressInputs input{
+    display: none;
+  }
 
   
 
