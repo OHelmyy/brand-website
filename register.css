@@ -109,6 +109,12 @@ margin: 5%;
 }
 
 
+.fa-eye {
+  position: absolute;
+  right: 183px;
+  top: 239px;
+  transform: translateY(-50%);
+}
 
 
 
