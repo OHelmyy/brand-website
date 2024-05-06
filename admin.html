@@ -3,10 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Images/Logo-removebg-preview (1).png" /><link>
-    <title>Document</title>
+    <title>NEO.EG</title>
+    <link rel="stylesheet" href="admin.css" />
+    <!-- page icon -->
+    <link rel="icon" type="image/x-icon" href="Images/Logo-removebg-preview (1).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 </head>
 <body>
+
+    <div class="AdminNavBar">
+        
+        <button class="navBar" onclick="openPage('Home')"><i class="fa-solid fa-house"></i></button>
+        <button class="navBar" onclick="openPage('Dashboard')"><i class="fa-solid fa-gauge"></i></button>
+        <button class="navBar" onclick="openPage('Orders')"><i class="fa-regular fa-calendar-days"></i></button>   
+        <button class="navBar" onclick="openPage('Products')"><i class="fa-solid fa-barcode"></i></button>   
+        <button class="navBar" onclick="openPage('Users')"><i class="fa-solid fa-users"></i></i></button>     
+        <br>
+        <br>
+        <br>
+        
+   
+   
+
+    </div>
+
+    <div class="MyaccContainer">
+        <div id="Home" class="tabcontent">
+        </div>
+
+        <div id="Dashboard" class="tabcontent">
+
+        
+                  </div>
+
+
+        <div id="Orders" class="tabcontent">
+
+          <h1>ORDERS</h1>
+          <table class="order-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Items(s)</th>
+                <th>Sum</th>
+              </tr>
+              
+
+            </thead>
+            <tbody>
+              <tr>
+                <td>123456</td>
+                <td>2024-04-27</td>
+                <td>2</td>
+                <td>1600 EGP</td>
+              </tr>
+  
+            </tbody>
+          </table>  
+        </div>
+
+        <div id="Products" class="tabcontent">
+          <h1>PRODUCTS</h1>
+          <table class="order-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Out of sight</td>
+                <td>Hoodie</td>
+                <td>10</td>
+                <td>950 EGP</td>
+                <td><input type="checkbox" onclick="" value="Delete"></input></td>
+
+
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Stock in the loop</td>
+                <td>Hoodie</td>
+                <td>10</td>
+                <td>950 EGP</td>
+                <td><input type="checkbox" onclick="" value="Delete"></input></td>
+
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Van gogh </td>
+                <td>Sweater</td>
+                <td>10</td>
+                <td>800 EGP</td>
+                <td><input type="checkbox" onclick="" value="Delete"></input></td>
+
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>DopeFish</td>
+                <td>Sweater</td>
+                <td>10</td>
+                <td>800 EGP</td>
+                <td><input type="checkbox" onclick="" value="Delete"></input></td>
+
+              </tr>
+              <tr>
+                <td>05</td>
+                <td>Heartners</td>
+                <td>Jacket</td>
+                <td>10</td>
+                <td>1100 EGP</td>
+                <td><input type="checkbox" onclick="" value="Delete"></input></td>
+              </tr>
+            </tbody>
+          </table> 
+
+        <div class="ProductsPage-button">
+
+          <button onclick="showAlert()">Delete</button>
+
+          <button onclick="showAddProduct()">Add Product</button>
+          <div id="AddProduct">
+              <h2>Add product</h2>
+              <br>
+              <p>Product ID:</p>
+              <input type="text" id=" First Name-text" placeholder="Enter Product ID:">
+              <p>Product Name:</p>
+              <input type="text" id="Last Name-text" placeholder="Enter Product Name:">
+              <p>Product category:</p>
+              <input type="text" id="Username-text" placeholder="Enter Product category:">
+              <p>Quantity:</p>
+              <input type="text" id="Email-text" placeholder="Enter Quantity:">
+              <p>Price:</p>
+              <input type="text" id="Adress-text" placeholder="Enter Price:">
+              <!-- <p>Phone:</p>
+              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
+              <p>Password:</p>
+              <input type="password" id="Password-text" placeholder="Enter Password:"> -->
+
+              <button onclick="addInput()">Add</button>
+              <button onclick="hidePAddWindow()">Cancel</button>
+          </div>
+
+          <button onclick="showEditProduct()">Edit product</button>
+          <div id="EditProduct">
+              <h2>Edit product</h2>
+              <br>
+              <p>Product ID:</p>
+              <input type="text" id=" First Name-text" placeholder="Enter Product ID:">
+              <p>Product Name:</p>
+              <input type="text" id="Last Name-text" placeholder="Enter Product Name:">
+              <p>Product category:</p>
+              <input type="text" id="Username-text" placeholder="Enter Product category:">
+              <p>Quantity:</p>
+              <input type="text" id="Email-text" placeholder="Enter Quantity:">
+              <p>Price:</p>
+              <input type="text" id="Adress-text" placeholder="Enter Price:">
+              <!-- <p>Phone:</p>
+              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
+              <p>Password:</p>
+              <input type="password" id="Password-text" placeholder="Enter Password:"> -->
+
+              <button onclick="EditInput()">Add</button>
+              <button onclick="hidePEditWindow()">Cancel</button>
+          </div>
+
+        </div>
+      
+        </div>
+
+
+        <div id="Users" class="tabcontent"> 
+          <h1>USERS</h1>
+          <table class="order-table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username </th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>lionel</td>
+                <td>messi</td>
+                <td>ankaramessi</td>
+                <td>messi@gmail.com</td>
+                <td>minya</td>
+                <td>01000000001</td>
+                <td><input type="checkbox" onclick="" value="Delete"></input></td>
+
+
+              </tr>
+              
+            </tbody>
+          </table> 
+
+        <div class="UsersPage-button">
+
+          <button onclick="showAlert()">Delete</button>
+
+          <button onclick="showAddUser()">Add User</button>
+          <div id="AddUser">
+              <h2>Add User</h2>
+              <br>
+              <p>First Name:</p>
+              <input type="text" id=" First Name-text" placeholder="Enter First Name:">
+              <p>Last Name:</p>
+              <input type="text" id="Last Name-text" placeholder="Enter Last Name:">
+              <p>Username Name:</p>
+              <input type="text" id="Username-text" placeholder="Enter Username Name:">
+              <p>Email:</p>
+              <input type="text" id="Email-text" placeholder="Enter Email:">
+              <p>Address:</p>
+              <input type="text" id="Adress-text" placeholder="Enter Adress:">
+              <p>Phone:</p>
+              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
+              <p>Password:</p>
+              <input type="password" id="Password-text" placeholder="Enter Password:">
+
+              <button onclick="addInput()">Add</button>
+              <button onclick="hideAddWindow()">Cancel</button>
+          </div>
+          
+          <button onclick="showEditUser()">Edit User</button>
+          <div id="EditUser">
+              <h2>Edit User</h2>
+              <br>
+              <p>First Name:</p>
+              <input type="text" id=" First Name-text" placeholder="Enter First Name:">
+              <p>Last Name:</p>
+              <input type="text" id="Last Name-text" placeholder="Enter Last Name:">
+              <p>Username Name:</p>
+              <input type="text" id="Username-text" placeholder="Enter Username Name:">
+              <p>Email:</p>
+              <input type="text" id="Email-text" placeholder="Enter Email:">
+              <p>Address:</p>
+              <input type="text" id="Adress-text" placeholder="Enter Adress:">
+              <p>Phone:</p>
+              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
+              <p>Password:</p>
+              <input type="password" id="Password-text" placeholder="Enter Password:">
+
+              <button onclick="EditInput()">Add</button>
+              <button onclick="hideEditWindow()">Cancel</button>
+          </div>
+
+        </div>
+      
+        </div>
+    </div>
+        <script src="admin.js"></script>
     
 </body>
 </html>
