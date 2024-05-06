@@ -46,7 +46,7 @@
         e.preventDefault(); // Prevent default form submission behavior
         let messages = [];
   
-        if (email.value.trim().toLowerCase() !== 'amr123@gmail.com') {
+        if (email.value.trim().toLowerCase() !== 'amr123@gmail.com'  && email.value.trim().toLowerCase() !== 'admin@gmail.com') {
             messages.push('Invalid email');
             emailError.innerText = 'Invalid email';
         } else {
@@ -54,20 +54,25 @@
         }
   
         
-         if (password.value !== 'amr12345') {
-            messages.push('Invalid password');
-            passwordError.innerText = 'Invalid password';
-        } else {
-            passwordError.innerText = '';
+        if ((email.value.trim().toLowerCase() === 'amr123@gmail.com' && password.value !== 'amr12345') ||
+        (email.value.trim().toLowerCase() === 'admin@gmail.com' && password.value !== 'admin123')) {
+        messages.push('Invalid password');
+        passwordError.innerText = 'Invalid password';
+    } else {
+        passwordError.innerText = '';
+    }
+  
+        if (messages.length == 0) {
+          if (email.value.trim().toLowerCase() === 'amr123@gmail.com') {
+            window.location.href = "home.html";
+        }
+        else if (email.value.trim().toLowerCase() === 'admin@gmail.com') {
+            window.location.href = "admin.html";
+        }
+
+
         }
   
-  
-        if (messages.length > 0) {
-            return false; // Prevent form submission
-        }
-  
-        // If no errors, proceed to the desired action
-        window.location.href = "home.html";
     });
 }
 
