@@ -58,17 +58,6 @@ addWindow.style.display = 'none';
 //--------------------------------------------------------------------------
 
 
-
-// function addInput() {
-//     var inputText = document.getElementById('input-text').value;
-//     // Do something with the input value (e.g., store it, display it, etc.)
-//     console.log('Input value:', inputText);
-
-//     hideAddWindow();
-// }
-
-
-
   function showAlert(){
      confirm('ARE YOU SURE YOU WANT TO DELETE THE ITEM');
      }
