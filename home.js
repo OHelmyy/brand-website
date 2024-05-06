@@ -19,7 +19,9 @@ function goToShop() {
   function openCart() {
 document.getElementById("myCart").style.width = "30rem";
 }
-
+function goToCheckout() {
+  window.location.href = "checkout.html"; 
+}
 
 function closeCart() {
 document.getElementById("myCart").style.width = "0";
