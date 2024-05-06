@@ -540,8 +540,8 @@ text-align: center;
   }
   .password-form label{
     color: black;
-    font-size: 1.5rem;
-    padding-top: 1rem;
+    font-size: 1rem;
+    padding-top: 0rem;
 
   }
   .password-form button{
