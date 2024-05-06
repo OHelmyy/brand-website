@@ -15,6 +15,37 @@ body {
   section{
     padding: 100px 50px;
 }
+.BackToHome{
+  width: 2rem;
+  display: flex;
+  
+}
+.fa-solid.fa-arrow-left{
+  font-size: 2rem;
+padding: 10px;
+}
+.fa-solid.fa-arrow-left:hover{
+  font-size: 2rem;
+  background-color:pink ;
+  padding: 10px;
+}
+
+.navigation {
+  text-align: right;
+  padding: 10px;
+}
+.navigation a {
+  color: black;
+  background-size: 100%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-decoration: none;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0px;
+}
 .contactInfo{
     background-color: white;
     display: flex;
@@ -184,6 +215,7 @@ input{
 
 
 
+
   .footer{
     background-color: white;
     width: 100%;
@@ -246,6 +278,7 @@ input{
   filter: drop-shadow(15);
   }
   .footerSocial{
+    color: black;
     padding: 0.5rem;
   }
   .footerSocial p{
@@ -254,6 +287,7 @@ input{
     margin: 0.5rem;
   }
   .footerSocial a{
+    
     padding: -0.5rem 0.5rem  0.5rem  0.5rem;
     margin: 0.5rem;
   }

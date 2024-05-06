@@ -20,6 +20,23 @@ body{
     
     
 }
+.BackToHome{
+  width: 2rem;
+  display: flex;
+  padding-left: 30px;
+  
+}
+.fa-solid.fa-arrow-left{
+  font-size: 2rem;
+padding: 10px;
+
+}
+.fa-solid.fa-arrow-left:hover{
+  font-size: 2rem;
+  background-color:white ;
+  color: pink;
+  
+}
 
 
 
