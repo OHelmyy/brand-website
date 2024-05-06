@@ -50,7 +50,7 @@ font-style: normal;
 
 
 input {
-  width: 50%;
+  width: 100%;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -72,8 +72,9 @@ label {
 
 
 .information {
-  flex: 50%;
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .divContent{
@@ -81,7 +82,7 @@ label {
   flex-direction: column;
   justify-content: flex-start;
   padding: 1rem;
-width: 50%;
+width: 100%;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -89,7 +90,7 @@ width: 50%;
 }
 
 
-.btn {
+.information button {
   background-color: #000000;
   color: white;
   padding: 14px;
@@ -101,7 +102,7 @@ width: 50%;
   font-size: 28px;
 }
 
-.btn:hover {
+.information button:hover {
   background-color: #45a049;
 }
 
@@ -151,14 +152,7 @@ width: 50%;
   box-sizing: border-box;
 }
 
-.payment input[type="text"]:focus {
-  outline: none;
-  border: 1px solid #007bff;
-}
 
-.payment input[type="text"]:invalid {
-  border: 1px solid red;
-}
 
 .payment input[type="text"]::placeholder {
   color: #aaa;

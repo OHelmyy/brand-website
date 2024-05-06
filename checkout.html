@@ -10,28 +10,40 @@
 
 </head>
 <body>
-<h2>Checkout Form</h2>
+<h2>Checkout|NEO </h2>
 
 <div class="checkout">
   
 
     
         <div class="information">
+
+          <form id="form" onsubmit="validate5()">
+
           <h3>Billing Address</h3>
+
+
           <label for="fname">Full Name</label>
-          <input type="text"  placeholder="Full name" required>
+          <input type="text" id="Name"  placeholder="Full name" >
+          <div id="fullNameError" class="error"></div>
 
 
           <label for="email"> Email</label>
-          <input type="email"  placeholder="email">
+          <input type="email" id="email" placeholder="email">
+          <div id="emailError" class="error"></div>
 
 
           <label for="adress"> Address</label>
-          <input type="text"  placeholder="Addess">
+          <input type="text" id="adress" placeholder="Addess">
+          <div id="adressError" class="error"></div>
+
 
 
           <label for="phone">phone number</label>
-          <input type="text" id="phone" name="phone" placeholder="phone number">
+          <input type="text" id="phone"  placeholder="phone number">
+          <div id="phoneError" class="error"></div>
+
+
 
 
 
@@ -93,23 +105,42 @@
 
 
             <label for="cname">Name on Card</label>
-<input type="text" id="cname" name="cname" placeholder="Ahmed">
+            <input type="text" id="cname"  placeholder="Ahmed">
+            <div id="cnameError" class="error"></div>
 
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="ccnum" placeholder="1111-2222-3333-4444" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"> <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="December">
+             <input type="text" id="ccnum"  placeholder="1111-2222-3333-4444" >
+            <div id="ccnumError" class="error"></div>
+
+
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth"  placeholder="04">
+            <div id="expmonthError" class="error"></div>
+
+
+
 
             <label for="expyear">Exp Year</label>
-            <input type="text" id="expyear" name="expyear" placeholder="2027">
+            <input type="text" id="expyear"  placeholder="2027">
+            <div id="expyearError" class="error"></div>
+
+
 
             <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" placeholder="123" pattern="[0-9]{3}"> 
-            </div>
+            <input type="text" id="cvv"  placeholder="123" > 
+            <div id="cvvError" class="error"></div>
+
+
+          </div>
           
         </div>
+
+        <button type="submit" id="createAccountButton">Confirm Order</button>
+        </form>
+
       </div>
 
-      <input type="submit" value="complete order" class="btn">
+      
     </div>
 
 
@@ -155,7 +186,7 @@
       
 
 
-<script src="checkout.js">
+<script src="register.js">
 </script>
 
 
