@@ -352,7 +352,7 @@ video::-webkit-media-controls {
   width: 10rem;
 }
 .ifSign{
-  display: none;
+  display: block;
 }
 
 .Cartslide {

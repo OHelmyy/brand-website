@@ -53,7 +53,11 @@ function editEmail(){
 }
 function editPassword(){
   document.getElementById("changePass").style.display="block";
+  document.getElementById("changePass").style.display="block";
+  document.getElementById("changePass").style.display="block";
+
 }
+
 function editAddress(){
   document.getElementById("changeAddress").style.display="block";
 }
@@ -66,6 +70,37 @@ function editPhone(){
 function showPassword(){
   document.getElementById("showPass").innerHTML="<span>worldcup_2022</span>";
 }
+function logout(){
+  alert("Logout Successful");
+  window.location.href="register.html"
+}
+function openAddress(){
+  window.location.href="user_profile.html"
+}
+function changeImage(){
+  alert("Logout Successful");
+}
+function openChangePassword() {
+  var passwordForm = document.getElementById("password-form");
+  if (passwordForm.style.display === "none") {
+      passwordForm.style.display = "block";
+  } else {
+      passwordForm.style.display = "none";
+  }
+}
+
+function changePassword() {
+  var oldPassword = document.getElementById("oldPassword").value;
+  var newPassword = document.getElementById("newPassword").value;
+  var confirmPassword = document.getElementById("confirmPassword").value;
+  if (newPassword !== confirmPassword) {
+      alert("New password and confirm password do not match!");
+  } else {
+      
+      alert("Password changed successfully!");
+  }
+}
+
 
 
 // Sign Up---------------------------------------------------------------------------------

@@ -14,7 +14,7 @@
    
 </head>
 <body>
-  <script src="Project.js"></script>
+  
 
    <!-- EL navigation bar bta3et el account -->
    <div id="myAccount" class="AccountSlide">
@@ -77,8 +77,7 @@
     <header>
         <nav>
           <div class="head">
-            <a href="home.html"
-              ><img src="Images/Logo-removebg-preview (1).png" weight="30%"
+            <a href="home.html" ><img src="Images/Logo-removebg-preview (1).png" weight="30%"
             /></a>
           </div>
           <div class="navigation">
@@ -94,10 +93,10 @@
             <a href="contact.html" title="Contact"
               ><i class="fa-solid fa-square-phone"></i
             ></a>
-            <span class="action">
+            <!-- <span class="action">
               <input type="text" placeholder="Search"> 
               <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+            </span> -->
           </div>
         </nav>
       </header>
@@ -109,35 +108,33 @@
         </div>
         <button class="navBar" onclick="openPage('Account')">My Account</button>
         <button class="navBar" onclick="openPage('Orders')">Orders</button>
-        <button class="navBar" onclick="openPage('Addresses')">Addresses</button>      
+        <button class="navBar" onclick="openPage('Addresses')">Addresses</button>   
+        <button class="navBar" onclick="openPage('Settings')">Settings</button> 
+        <button class="navBar" onclick="logout()">Logout</button>    
+   
+       
 
       </div>
       <div class="MyaccContainer">
       <div id="Account" class="tabcontent">
 
-        <h1>Hello,Serag Elhelw</h1>
+        <h1>Hello,Lionel Messi</h1>
         <h2>Personal information</h2>
 
         <div class="AccInputs">
             <div class="divContent">
                 <label for="fname">Full Name:</label>
                 <span>Lionel Messi De santos junior</span>
-            <input id="changeName" type="text" placeholder="Edit Name" name="name" required>
-            <button class="Edit-button" onclick=editName() title="edit name"><i class="fa-solid fa-pen-to-square"></i></button> 
-            </div>
+             </div>
 
             <div class="divContent">
                 <label for="email">Your Email:</label><br>
                 <span>LionelMessi10@gmail.com</span>
-            <input id="changeEmail" type="text" placeholder="Edit Email" name="mail" required>
-            <button class="Edit-button" onclick="editEmail()" title="edit email"><i class="fa-solid fa-pen-to-square"></i></button> 
-            </div>
+           </div>
 
             <div class="divContent">
             <label for="password">Password:</label><br>
             <span id="showPass" class="showPass" >************</span>
-            <input id="changePass" type="password" placeholder="Edit Password" name="pass" required>
-            <button class="Edit-button" onclick="editPassword()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button>
             <button class="show-password" onclick="showPassword()" title="Show password"><i class="fa-solid fa-eye"></i></button> 
             </div>
         </div>
@@ -151,9 +148,9 @@
           <thead>
             <tr>
               <th>Order ID</th>
-              <th>Order ID</th>
-              <th>Order ID</th>
-              <th>Order ID</th>
+              <th>Date</th>
+              <th>Product</th>
+              <th>Price</th>
             </tr>
           </thead>
           <tbody>
@@ -184,26 +181,23 @@
             <div class="divContent">
             <label for="Address">Address:</label><br>
             <span>Mountain view compund 6 October </span>
-            <input  id="changeAddress" type="text" placeholder=" Edit Address" name="address" required>
-            <button class="Edit-button" onclick="editAddress()" title="edit address"><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
 
             <div class="divContent">
             <label for="Appartment">Appartment,suite,etc:</label><br>
             <span>villa no.97 </span>
-            <input id="changeAppartment" type="text" placeholder="Edit Appartment,suite,etc" name="appartment" required>
-            <button class="Edit-button" onclick="editAppartment()" title="edit password"><i class="fa-solid fa-pen-to-square"></i></button> 
             </div>
 
             <div class="divContent">
-                <label for="country">Country:</label>     
-                <select id="country" name="country" class="form-control">
-                <option value="Egypt">Egypt</option>
-                </select>
+                <label for="country">Country:</label>  
+                <span>Egypt</span>   
+                <!-- <select id="country" name="country" class="form-control">
+                <option value="Egypt">Egypt</option> 
+                </select>-->
             </div>
 
                
-             <div class="divContent">
+             <!-- <div class="divContent">
                 <label for="Governorate">Governorate:</label><br>
                 <input type="text" placeholder="Governorate" name="governorate" required>
                 <select id="state" name="State" >
@@ -234,18 +228,83 @@
                 <option value="Suez">Suez</option>
                 <option value="Luxor">Luxor</option>
                 </select>
-                </div>
+                </div> -->
 
     
             <div class="divContent">
                 <label for="phone">Phone:</label><br>
                 <span>01000000010 </span>
-                <input id="changePhone" type="text" placeholder="Edit Phone" name="phone" required>
-                <button class="Edit-button" onclick="editPhone()" title="edit phone "><i class="fa-solid fa-pen-to-square"></i></button> 
-            </div>
+                </div>
         </div>
        
       </div>
+
+      <div id="Settings" class="tabcontent">
+        
+        <h1>Hello,Lionel Messi</h1>
+        <h2>Settings</h2>
+
+        <div class="SettingsInputs">
+            
+      
+            <div class="divContent">
+              <p>Edit name</p>
+              <input id="changeName" type="text" placeholder="Lionel Messi De santos junior" name="name" required>
+              <button class="Edit-button" onclick=editName() title="edit name"><i class="fa-solid fa-pen-to-square"></i></button> 
+             
+            </div>
+               
+             <div class="divContent">
+              <p>Edit Address</p>
+              <input  id="changeAddress" type="text" placeholder=" Mountain view compund 6 October" name="address" required>
+              <button class="Edit-button" onclick="editAddress()" title="edit address"><i class="fa-solid fa-pen-to-square"></i></button> 
+                </div>
+
+    
+            <div class="divContent">
+              <p>Edit Appartment</p>
+              <input id="changeAppartment" type="text" placeholder="villa no.97" name="appartment" required>
+              <button class="Edit-button" onclick="editAppartment()" title="edit appartment"><i class="fa-solid fa-pen-to-square"></i></button> 
+             
+            </div>
+            <div class="divContent">
+              <p>Edit Phone</p>
+              <input id="changePhone" type="text" placeholder="01000000010" name="phone" required>
+              <button class="Edit-button" onclick="editPhone()" title="edit phone "><i class="fa-solid fa-pen-to-square"></i></button> 
+         
+            </div>
+            
+        
+        </div>
+
+
+    <div class="divContent">
+          <p>Edit Password</p>
+
+          <button onclick="openChangePassword()">Change Password</button>
+
+      <div class="password-form" id="password-form">
+
+        <label for="oldPassword">Old Password:</label><br>
+        <input class="SettingsInputs" type="password" id="oldPassword" name="oldPassword"><br>
+
+        <label for="newPassword">New Password:</label><br>
+        <input class="SettingsInputs" type="password" id="newPassword" name="newPassword"><br>
+
+        <label for="confirmPassword">Confirm New Password:</label><br>
+        <input class="SettingsInputs" type="password" id="confirmPassword" name="confirmPassword"><br>
+
+        <button onclick="changePassword()">Confirm</button>
+
+      </div>
+
+    </div>
+
+       
+      </div>
+    
+    
+       
       </div>
       <footer>
         <div class="footerContainer">
@@ -272,6 +331,6 @@
           </div>
         </div>
        </footer>
-      
+       <script src="Project.js"></script>
 </body>
 </html>
