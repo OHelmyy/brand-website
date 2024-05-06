@@ -67,6 +67,9 @@ function editAppartment(){
 function editPhone(){
   document.getElementById("changePhone").style.display="block";
 }
+function showPassword(){
+  document.getElementById("showPass").innerHTML="<span>worldcup_2022</span>";
+}
 function logout(){
   alert("Logout Successful");
   window.location.href="register.html"
