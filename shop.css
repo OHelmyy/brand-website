@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 body{
     margin: 0px;
 }
@@ -18,7 +19,7 @@ body{
     margin:20px ;
     padding: 20px;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Jersey 25", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: black;
@@ -263,12 +264,95 @@ body{
     transition-duration: 0.3s;
 }
 footer{
-    background-color: whitesmoke;
+    background-color: rgb(158, 158, 158);
+    width: 100%;
+    display: flex;
+    font-family: "Jersey 25", sans-serif;
+    margin-top: 100px;
+
+}
+.footerContainer{
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+}
+.footerImage Img{
+    display: flex;
+    color: white;
+    width: 4rem;
+    justify-content: center;
+    position: absolute;
+}
+.footerImage{
+    object-fit: contain;
+}
+.footerConatcts{
+    display: flex;
+    padding: 0.5rem;
+
+}
+.footerConatcts a{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0.3em;
+    text-transform: uppercase;
+    text-shadow: 2px;   
+}
+.footerBar{
+    display: flex;
+    background-color: white;
+    padding: 0.5rem;
+}
+.footerBar a{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.footerBar a:hover{
+    color: deeppink;
+    transition: 0.5;
+filter: drop-shadow(15);
+}
+.footerSocial{
+    padding: 0.5rem;
+}
+.footerSocial p{
+    font-size: 1.1rem;
+    padding: -0.6rem;
+    margin: 0.5rem;
+}
+.footerSocial a{
+    padding: -0.5rem 0.5rem  0.5rem  0.5rem;
+    margin: 0.5rem;
 }
 
-footer img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-
+@media (max-width: 768px){
+    .footerBar a{
+    font-size: 1rem;
+}
+.footerConatcts a{
+    font-size: 1rem;
+}
+    
+}
+@media (max-width: 768px){
+    .overlay-button{
+    font-size: 1rem;
+}
+    .overlaySlide-button{
+    font-size: 2rem;
+}
+    
 }
