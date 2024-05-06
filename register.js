@@ -6,8 +6,35 @@
  sign in javascript
   */
 
-
-
+ function show()
+ {
+ 
+ var showpw = document.getElementById('password');
+ if (showpw.type == "password") 
+   {
+   showpw.type = "text";
+ } else {
+ 
+   showpw.type = "password";
+   
+ }
+ 
+ }
+ 
+ function show2()
+ {
+ 
+ var showpw = document.getElementById('password2');
+ if (showpw.type == "password") 
+   {
+   showpw.type = "text";
+ } else {
+ 
+   showpw.type = "password";
+   
+ }
+ 
+ }
  function validate1() {
     var email = document.getElementById('email');
     var password = document.getElementById('password');
