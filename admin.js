@@ -31,7 +31,10 @@ function hideEditWindow() {
   addWindow.style.display = 'none';
 }
 //--------------------------------------------------------------------------
-
+function logout() {
+  alert("Logout successful!");
+  window.location.href = "register.html"; 
+}
 //--------------------------------------------------------------------------
 function showAddProduct() {
   var addWindow = document.getElementById('AddProduct');
