@@ -252,26 +252,54 @@
           <button onclick="showAlert()">Delete</button>
 
           <button onclick="showAddUser()">Add User</button>
+          
+          
+          
+          
           <div id="AddUser">
+
+            <form id="form" onsubmit="return addInput();">
+
               <h2>Add User</h2>
               <br>
-              <p>First Name:</p>
-              <input type="text" id=" First Name-text" placeholder="Enter First Name:">
-              <p>Last Name:</p>
-              <input type="text" id="Last Name-text" placeholder="Enter Last Name:">
-              <p>Username Name:</p>
-              <input type="text" id="Username-text" placeholder="Enter Username Name:">
-              <p>Email:</p>
-              <input type="text" id="Email-text" placeholder="Enter Email:">
-              <p>Address:</p>
-              <input type="text" id="Adress-text" placeholder="Enter Adress:">
-              <p>Phone:</p>
-              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
-              <p>Password:</p>
-              <input type="password" id="Password-text" placeholder="Enter Password:">
 
-              <button onclick="addInput()">Add</button>
-              <button onclick="hideAddWindow()">Cancel</button>
+             
+              <p>First Name:</p>
+
+              <input type="text"id="firstName" placeholder="Enter First Name:">
+              <div id="firstNameError" class="error"></div>
+
+              <p>Last Name:</p>
+              <input type="text" id="lastName" placeholder="Enter Last Name:">
+              <div id="lastNameError" class="error"></div>
+
+              <p>Username Name:</p>
+              <input type="text" id="username" placeholder="Enter Username Name:">
+              <div id="usernameError" class="error"></div>
+
+
+              <p>Email:</p>
+              <input type="text" id="email" placeholder="Enter Email:">
+              <div id="emailError" class="error"></div>
+
+              <p>Address:</p>
+              <input type="text" id="address" placeholder="Enter Adress:">
+              <div id="addressError" class="error"></div>
+
+              <p>Phone:</p>
+              <input type="text" id="phone" placeholder="Enter  Phone:">
+              <div id="phoneError" class="error"></div>
+
+              <p>Password:</p>
+              <input type="password" id="password" placeholder="Enter Password:">
+              <div id="passwordError" class="error"></div>
+
+              <input type="submit" name="Submit">
+
+
+
+              <button type="button" onclick="hideAddWindow()">Cancel</button>
+            </form>
           </div>
           
           <button onclick="showEditUser()">Edit User</button>
