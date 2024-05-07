@@ -168,26 +168,38 @@
 
           <button onclick="showAddProduct()">Add Product</button>
           <div id="AddProduct">
+            <form id="form" onsubmit="return addInput1();">
               <h2>Add product</h2>
               <br>
               <p>Product ID:</p>
-              <input type="text" id=" FirstName" placeholder="Enter Product ID:">
-              <p>Product Name:</p>
-              <input type="text" id="LastName" placeholder="Enter Product Name:">
-              <p>Product category:</p>
-              <input type="text" id="Username" placeholder="Enter Product category:">
-              <p>Quantity:</p>
-              <input type="text" id="Email" placeholder="Enter Quantity:">
-              <p>Price:</p>
-              <input type="text" id="Adress" placeholder="Enter Price:">
-              <!-- <p>Phone:</p>
-              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
-              <p>Password:</p>
-              <input type="password" id="Password-text" placeholder="Enter Password:"> -->
+              <input type="text" id="firstName" placeholder="Enter Product ID:">
+              <div id="firstNameError" class="error"></div>
 
-              <button onclick="addInput()">Add</button>
-              <button onclick="hidePAddWindow()">Cancel</button>
+              <p>Product Name:</p>
+              <input type="text" id="productName" placeholder="Enter Product Name:">
+              <div id="productnameError" class="error"></div>
+              
+              <p>Product category:</p>
+              <input type="text" id="productcategory" placeholder="Enter Product category:">
+              <div id="productcategoryError" class="error"></div>
+              
+              <p>Quantity:</p>
+              <input type="text" id="quantity" placeholder="Enter Quantity:">
+              <div id="quantityError" class="error"></div>
+              
+              <p>Price:</p>
+              <input type="text" id="price" placeholder="Enter Price:">
+              <div id="priceError" class="error"></div>
+
+              <input type="submit" name="Submit">
+              <button type="button" onclick="hidePAddWindow()">Cancel</button>
+
+            </form>
           </div>
+
+
+
+
 
           <button onclick="showEditProduct()">Edit product</button>
           <div id="EditProduct">
