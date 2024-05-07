@@ -239,3 +239,6 @@ document.getElementById("myAccount").style.width = "30rem";
 function closeAcc() {
 document.getElementById("myAccount").style.width = "0";
 }
+function goToCheckout() {
+  window.location.href = "checkout.html"; 
+}

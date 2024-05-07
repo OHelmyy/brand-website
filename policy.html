@@ -9,7 +9,61 @@
     <title>Policy</title>
 </head>
 <body>
+  <div id="myAccount" class="AccountSlide">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeAcc()"><i class="fa-solid fa-arrow-right"></i></a>
+    <div class="AccountSideNav-img">
+      <img src="Images/Logo-removebg-preview (1).png" alt="">
+    </div> 
+    <div class="ifNotSign">
+    <a href="register.html">Sign In</a>
+    <a href="signupregister.html">Sign Up</a>
+    <hr>
+    </div>
+    <div class="ifSign">
+    <a href="user_profile.html">My Profile</a>
+    <a onclick=logout()>LogOut</a>
+    </div>a
 
+
+  </div>
+
+
+  <!-- EL navigation bar bta3et el cart -->
+  <div id="myCart" class="Cartslide">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"><i class="fa-solid fa-arrow-right"></i></a>
+    
+    <div class="cart-products">
+      
+        <div class="Product-1">
+          <img src="Images/Item1.jpg">
+          <h4>PINK HOODIE</h4>
+          <div>
+              <span>800EGP</span>
+              <button>-</button><span class="quantity">1</span><button>+</button>
+          </div>
+      
+
+      </div>
+      <div class="Jacket-1">
+        <img src="Images/Jacket1.jpg">
+        <h4>Black Jacket</h4>
+        <div>
+            <span>800EGP</span>
+            <button>-</button><span class="quantity">1</span><button>+</button>
+        </div>
+    
+    </div>
+    <div class="checkout-details">
+    <p>number of items: 2</p>
+    
+      <p>total: 1600 £</p>
+      
+      <button onclick="goToCheckout()" class="checkout-button">checkout</button>
+
+    </div>
+      </div>
+      
+  </div>
 
     <div class="intro">
         <h1 class="policy-header">
@@ -37,7 +91,7 @@
              <a onclick="openAcc()" title="Account"
              ><i class="fas fa-user"></i
               ></a>
-              <a onclick="openCart()" href="" title="Cart"
+              <a onclick="openCart()" href="#cart" title="Cart"
                 ><i class="fas fa-shopping-cart"></i>
               </a>
               <a href="about.html" title="About neo"
@@ -63,34 +117,7 @@
 
             <hr>
         </div>
-       <script>
-
-document.addEventListener('DOMContentLoaded', () => {
-  let intro = document.querySelector('.intro');
-  let policySpan = document.querySelectorAll('.policy');
-
-  setTimeout(() => {
-    policySpan.forEach((span, idx) => {
-      setTimeout(() => {
-        span.classList.add('active');
-      }, (idx + 1) * 400);
-    });
-
-    setTimeout(() => {
-      policySpan.forEach((span, idx) => {
-        setTimeout(() => {
-          span.classList.remove('active');
-          span.classList.add('fade');
-        }, (idx + 1) * 50);
-      });
-    }, 2000);
-
-    setTimeout(() => {
-      intro.style.top = '-100vh'; 
-    }, 2300);
-  });
-});
-       </script>
+     
         
         <footer>
             <div class="footerContainer">
@@ -118,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
            </footer>
       
-
+<script src="policy.js"></script>
 
 </body>
 
