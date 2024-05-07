@@ -1,24 +1,14 @@
 
 // USER PROFILE JS-------------------------------------------------------
-function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
+function openPage(pageName) {
+    var i, tabcontent;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
   
-    // Show the specific tab content
     document.getElementById(pageName).style.display = "block";
-  
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
   }
   
   // Get the element with id="defaultOpen" and click on it
@@ -40,17 +30,25 @@ function openPage(pageName, elmnt, color) {
         return false; // Prevent form submission
     }
 }
-function changeIfSign(){
 
-
-
-}
 function editName(){
-  document.getElementById("changeName").style.display="block";
+  var changeNameFrom=document.getElementById("changeName");
+  if(changeNameFrom.style.display=="none"){
+    changeNameFrom.style.display = "block";
+  } else {
+    changeNameFrom.style.display = "none";
+  }
 }
+
 function editEmail(){
-  document.getElementById("changeEmail").style.display="block";
+  var changeEmailFrom=document.getElementById("changeEmail");
+  if(changeEmailFrom.style.display=="none"){
+    changeEmailFrom.style.display = "block";
+  } else {
+    changeEmailFrom.style.display = "none";
+  }
 }
+
 function editPassword(){
   document.getElementById("changePass").style.display="block";
   document.getElementById("changePass").style.display="block";
@@ -59,16 +57,42 @@ function editPassword(){
 }
 
 function editAddress(){
-  document.getElementById("changeAddress").style.display="block";
+  var changeAddressFrom=document.getElementById("changeAddress");
+  if(changeAddressFrom.style.display=="none"){
+    changeAddressFrom.style.display = "block";
+  } else {
+    changeAddressFrom.style.display = "none";
+  }
+  
 }
+
 function editAppartment(){
-  document.getElementById("changeAppartment").style.display="block";
+  var changeAppartmentFrom=document.getElementById("changeAppartment");
+  if(changeAppartmentFrom.style.display=="none"){
+    changeAppartmentFrom.style.display = "block";
+  } else {
+    changeAppartmentFrom.style.display = "none";
+  }
 }
 function editPhone(){
-  document.getElementById("changePhone").style.display="block";
+  var changePhoneFrom=document.getElementById("changePhone");
+  if(changePhoneFrom.style.display=="none"){
+    changePhoneFrom.style.display = "block";
+  } else {
+    changePhoneFrom.style.display = "none";
+  }
+  
+
+
 }
 function showPassword(){
-  document.getElementById("showPass").innerHTML="<span>worldcup_2022</span>";
+  var ShowPassFomr=document.getElementById("showPass");
+  if(ShowPassFomr.innerHTML=="<span>************</span>"){
+    ShowPassFomr.innerHTML="<span>worldcup_2022</span>"
+  }
+  else{
+    ShowPassFomr.innerHTML="<span>************</span>"
+  }
 }
 function logout(){
   alert("Logout Successful");

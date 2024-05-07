@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+.body{
+  height: 100svh;
+  width:100%;
 
+}
 * {
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
@@ -30,7 +34,7 @@
   transition: 0.3s;
 }
 .AccountSlide a:hover {
-  color: white;
+  color: pink;
 }
 
 .AccountSlide .closebtn {
@@ -218,15 +222,16 @@
   padding-left: 30px;
   
 }
-.fa-solid.fa-arrow-left{
-  font-size: 2rem;
-padding: 10px;
+.fa-solid.fa-house{
+  font-size: 1rem;
+  color: black;
+  padding: 10px;
 
 }
-.fa-solid.fa-arrow-left:hover{
-  font-size: 2rem;
-  background-color:white ;
-  color: pink;
+.fa-solid.fa-house:hover{
+  background-color:pink ;
+  border-radius: 2rem;
+  color: white;
   
 }
 
@@ -251,10 +256,15 @@ header h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
     padding: 20px;
+    width: 80%;
     background-color: white;
+    clip-path: border-box;
+    border-radius: 3rem;
+    border-color: black;
+    border-style: outset;
     margin-top: 40px;
   }
   
@@ -272,6 +282,10 @@ header h4 {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 10px;
+  }
+  .policies a:hover {
+    background-color: pink;
+    color: white;
   }
 
 .intro {
