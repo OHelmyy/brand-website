@@ -304,26 +304,53 @@
           
           <button onclick="showEditUser()">Edit User</button>
           <div id="EditUser">
+            <form id="form" onsubmit="return EditInput();">
+
               <h2>Edit User</h2>
               <br>
               <p>First Name:</p>
               <input type="text" id=" FirstName" placeholder="Enter First Name:">
+              <div id="firstNameError" class="error"></div>
+
+
               <p>Last Name:</p>
               <input type="text" id="LastName" placeholder="Enter Last Name:">
+              <div id="lastNameError" class="error"></div>
+
+
               <p>Username Name:</p>
               <input type="text" id="Username" placeholder="Enter Username Name:">
+              <div id="usernameError" class="error"></div>
+
+
               <p>Email:</p>
               <input type="text" id="Email" placeholder="Enter Email:">
+              <div id="emailError" class="error"></div>
+
+
               <p>Address:</p>
               <input type="text" id="Adress" placeholder="Enter Adress:">
+              <div id="addressError" class="error"></div>
+
+
               <p>Phone:</p>
               <input type="text" id="Phone" placeholder="Enter  Phone:">
+              <div id="phoneError" class="error"></div>
+
+
               <p>Password:</p>
               <input type="password" id="Password" placeholder="Enter Password:">
+              <div id="passwordError" class="error"></div>
+              <input type="submit" name="Submit">
+              <button type="button" onclick="hideAddWindow()">Cancel</button>
+          
+          
+          
+            </form>
+            </div>
 
-              <button onclick="EditInput()">Add</button>
-              <button onclick="hideEditWindow()">Cancel</button>
-          </div>
+
+
 
         </div>
       
