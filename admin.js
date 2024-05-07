@@ -156,7 +156,7 @@ addWindow.style.display = 'none';
 
 
 
-
+/* add product*/
 
 function addInput1() {
     var productid = document.getElementById('firstName').value;
@@ -218,5 +218,71 @@ function addInput1() {
         alert("Product added successfully");
     }
   
+    return err;
+}
+
+
+/** edit product  */
+
+function EditInput() {
+    var productid = document.getElementById('firstName').value;
+    var productName = document.getElementById('productName').value;
+    var productcategory = document.getElementById('productcategory').value;
+    var quantity = document.getElementById('quantity').value;
+    var price = document.getElementById('price').value;
+
+    var firstNameError = document.getElementById('firstNameError');
+    var productnameError = document.getElementById('productnameError');
+    var productcategoryError = document.getElementById('productcategoryError');
+    var quantityError = document.getElementById('quantityError');
+    var priceError = document.getElementById('priceError');
+
+    var err = true;
+
+    if(productid == "") {
+        firstNameError.innerHTML = "Product ID is Required";
+        err = false;
+    } else {
+        firstNameError.innerHTML = "";
+    }
+
+    if(productName == "") {
+        productnameError.innerHTML = "Product Name is required";
+        err = false;
+    } else if(!/^[a-zA-Z\s]+$/.test(productName)) {
+        productnameError.innerHTML = "Please enter a valid product Name";
+        err = false;
+    } else {
+        productnameError.innerHTML = "";
+    }
+
+    if(productcategory == "") {
+        productcategoryError.innerHTML = "Product category is required";
+        err = false;
+    } else if(!/^[a-zA-Z\s]+$/.test(productcategory)) {
+        productcategoryError.innerHTML = "Please enter a valid product category";
+        err = false;
+    } else {
+        productcategoryError.innerHTML = "";
+    }
+
+    if(quantity == "") {
+        quantityError.innerHTML = "Quantity Is Required";
+        err = false;
+    } else {
+        quantityError.innerHTML = "";
+    }
+
+    if(price == "") {
+        priceError.innerHTML = "Price Is Required";
+        err = false;
+    } else {
+        priceError.innerHTML = "";
+    }
+
+    if (err) {
+        alert("Product edit successfully");
+    }
+
     return err;
 }

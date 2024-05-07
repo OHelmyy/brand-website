@@ -203,25 +203,37 @@
 
           <button onclick="showEditProduct()">Edit product</button>
           <div id="EditProduct">
+            <form id="form" onsubmit="return EditInput();">
+
               <h2>Edit product</h2>
               <br>
               <p>Product ID:</p>
-              <input type="text" id=" FirstName" placeholder="Enter Product ID:">
-              <p>Product Name:</p>
-              <input type="text" id="LastName" placeholder="Enter Product Name:">
-              <p>Product category:</p>
-              <input type="text" id="Username" placeholder="Enter Product category:">
-              <p>Quantity:</p>
-              <input type="text" id="Email" placeholder="Enter Quantity:">
-              <p>Price:</p>
-              <input type="text" id="Adress" placeholder="Enter Price:">
-              <!-- <p>Phone:</p>
-              <input type="text" id="Phone-text" placeholder="Enter  Phone:">
-              <p>Password:</p>
-              <input type="password" id="Password-text" placeholder="Enter Password:"> -->
+              <input type="text" id="firstName" placeholder="Enter Product ID" required>
+        <div id="firstNameError" class="error"></div>
 
-              <button onclick="EditInput()">Add</button>
-              <button onclick="hidePEditWindow()">Cancel</button>
+
+              <p>Product Name:</p>
+             <input type="text" id="productName" placeholder="Enter Product Name:" required>
+    <div id="productnameError" class="error"></div>
+    
+             
+              <p>Product category:</p>
+              <input type="text" id="productcategory" placeholder="Enter Product category:" required>
+    <div id="productcategoryError" class="error"></div>
+             
+              <p>Quantity:</p>
+              <input type="text" id="quantity" placeholder="Enter Quantity:" required>
+    <div id="quantityError" class="error"></div>
+             
+             
+              <p>Price:</p>
+              <input type="text" id="price" placeholder="Enter Price:" required>
+    <div id="priceError" class="error"></div>
+             
+              <input type="submit" name="Submit">
+              <button type="button" onclick="hidePEditWindow()">Cancel</button>
+
+            </form>
           </div>
 
         </div>
@@ -353,6 +365,9 @@
               <p>Password:</p>
               <input type="password" id="Password" placeholder="Enter Password:">
               <div id="passwordError" class="error"></div>
+
+
+              
               <input type="submit" name="Submit">
               <button type="button" onclick="hideAddWindow()">Cancel</button>
           
